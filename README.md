@@ -1,5 +1,5 @@
 # cse210-student-template for Matthew Overton
-This is the starter code for students in CSE 210.
+This is the starter code for Matthew Overton (a student in CSE 210).
 
 This repository contains the starter code for many different projects. They are arranged as follows:
 
