@@ -1,11 +1,10 @@
-// using System;
-using Internal;
+using System;
 
-// This is equivalent to Python's print statement
-Console.WriteLine("Hello world!");
+//Lists
+List<string> fruits = new List<string>();
+fruits.Add("Apple"); // Add elements to the list
+fruits.Add("Bananna");
+fruits.Add("Orange");
 
-// This is equivalent to Python's input function
-string name = Console.ReadLine();
-
-// This is equivalent to Python's f-string
-Console.WriteLine($"Hello, {name}!");
+fruits.RemoveAt(0); // Remove elements from the list by index
+fruits.Remove("Bananna"); // Remove elements from the list
