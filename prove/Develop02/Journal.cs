@@ -1,49 +1,49 @@
 class Journal
 {
-    private List<Entry> entries = new List<Entry>();
-    private List<Entry> loadedEntries = new List<Entry>();
-    private List<string> prompts = new List<string> { "Who was the most interesting person I interacted with today? ", "What was the best part of my day? ", "How did I see the hand of the Lord in my life today? ", "What was the strongest emotion I felt today? ", "If I had one thing I could do over today what would it be? ", "Who was kindest to me today? ", "How did I come closer to fulfilling my life goals today? ", "What is the most impressive thing I did today? " };
-    private File jFile = new File("journal.txt");
-    private int index;
-    private string prompt;
+    private List<Entry> _entries = new List<Entry>();
+    private List<Entry> _loadedEntries = new List<Entry>();
+    private List<string> _prompts = new List<string> { "Who was the most interesting person I interacted with today? ", "What was the best part of my day? ", "How did I see the hand of the Lord in my life today? ", "What was the strongest emotion I felt today? ", "If I had one thing I could do over today what would it be? ", "Who was kindest to me today? ", "How did I come closer to fulfilling my life goals today? ", "What is the most impressive thing I did today? " };
+    private File _jFile = new File("journal.txt");
+    private int _index;
+    private string _prompt;
     // private string date;
-    private string response;
-    private Entry entry;
-    private Random rand;
-    DateTime theCurrentTime;
-    string dateText;
+    private string _response;
+    private Entry _entry;
+    private Random _rand;
+    DateTime _theCurrentTime;
+    string _dateText;
     public void WriteNewEntry()
     {
-        rand = new Random();
-        index = rand.Next(prompts.Count);
-        prompt = prompts[index];
+        _rand = new Random();
+        _index = _rand.Next(_prompts.Count);
+        _prompt = _prompts[_index];
         // Console.WriteLine("What is the date? ");
         // date = Console.ReadLine();
-        theCurrentTime = DateTime.Now;
-        dateText = theCurrentTime.ToShortDateString();
-        Console.WriteLine(prompt);
-        response = Console.ReadLine();
+        _theCurrentTime = DateTime.Now;
+        _dateText = _theCurrentTime.ToShortDateString();
+        Console.WriteLine(_prompt);
+        _response = Console.ReadLine();
         // entry = new Entry(date, prompt, response);
-        entry = new Entry(dateText, prompt, response);
-        entries.Add(entry);
+        _entry = new Entry(_dateText, _prompt, _response);
+        _entries.Add(_entry);
     }
     public void LoadJournal()
     {
-        loadedEntries = jFile.Read();
-        foreach (Entry entry in loadedEntries)
+        _loadedEntries = _jFile.Read();
+        foreach (Entry _entry in _loadedEntries)
         {
-            entries.Add(entry);
+            _entries.Add(_entry);
         }
     }
     public void SaveJournal()
     {
-        jFile.Write(entries);
+        _jFile.Write(_entries);
     }
     public void DislayJournal()
     {
-        foreach (Entry entry in entries)
+        foreach (Entry _entry in _entries)
         {
-            entry.Display();
+            _entry.Display();
         }
     }
 }

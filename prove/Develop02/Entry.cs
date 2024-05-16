@@ -1,23 +1,23 @@
 class Entry
 {
-    private string date;
-    private string prompt;
-    private string response;
+    private string _date;
+    private string _prompt;
+    private string _response;
     public Entry(string Date, string Prompt, string Response)
     {
-        date = Date;
-        prompt = Prompt;
-        response = Response;
+        _date = Date;
+        _prompt = Prompt;
+        _response = Response;
     }
     public void Display()
     {
-        Console.WriteLine($"Date: {date}");
-        Console.WriteLine($"Prompt: {prompt}");
-        Console.WriteLine($"Response: {response}");
+        Console.WriteLine($"Date: {_date}");
+        Console.WriteLine($"Prompt: {_prompt}");
+        Console.WriteLine($"Response: {_response}");
     }
     
     public string GetEntryData()
     {
-        return $"{date}, {prompt}, {response}";
+        return $"{_date}, {_prompt}, {_response}";
     }
 }

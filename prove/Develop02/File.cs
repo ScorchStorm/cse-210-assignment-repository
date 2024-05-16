@@ -1,53 +1,53 @@
 class File
 {
-    private string path;
-    private string date;
-    private string prompt;
-    private string response;
-    private List<Entry> savedEntries = new List<Entry>();
-    private List<string> savedEntryData = new List<string>();
-    private string[] lines;
-    private string entryData;
-    private Entry entry;
+    private string _path;
+    private string _date;
+    private string _prompt;
+    private string _response;
+    private List<Entry> _savedEntries = new List<Entry>();
+    private List<string> _savedEntryData = new List<string>();
+    private string[] _lines;
+    private string _entryData;
+    private Entry _entry;
     public File(string path)
     {
-        this.path = path;
+        _path = path;
     }
 
     public List<Entry> Read()
     {
-        savedEntries = new List<Entry>();
-        foreach (Entry entry in savedEntries)
-            savedEntryData.Add(entry.GetEntryData());
-        lines = System.IO.File.ReadAllLines(path);
-        foreach (string line in lines)
+        _savedEntries = new List<Entry>();
+        foreach (Entry _entry in _savedEntries)
+            _savedEntryData.Add(_entry.GetEntryData());
+        _lines = System.IO.File.ReadAllLines(_path);
+        foreach (string _line in _lines)
         {
-            string[] parts = line.Split(",");
-            date = parts[0];
-            prompt = parts[1];
-            response = parts[2];
-            entry = new Entry(date, prompt, response);
-            if (!savedEntryData.Contains(entry.GetEntryData())) // check whether each item is already saved in the file
+            string[] parts = _line.Split(",");
+            _date = parts[0];
+            _prompt = parts[1];
+            _response = parts[2];
+            _entry = new Entry(_date, _prompt, _response);
+            if (!_savedEntryData.Contains(_entry.GetEntryData())) // check whether each item is already saved in the file
             {
-                savedEntries.Add(entry);
+                _savedEntries.Add(_entry);
             }
         }
-        return savedEntries;
+        return _savedEntries;
     }
 
-    public void Write(List<Entry> entries)
+    public void Write(List<Entry> _entries)
     {
-        savedEntries = Read();
-        foreach (Entry entry in savedEntries)
-            savedEntryData.Add(entry.GetEntryData());
-        using (StreamWriter outputFile = new StreamWriter(path, true)) // Create or append to the CSV file
+        _savedEntries = Read();
+        foreach (Entry _entry in _savedEntries)
+            _savedEntryData.Add(_entry.GetEntryData());
+        using (StreamWriter outputFile = new StreamWriter(_path, true)) // Create or append to the CSV file
         {
-            foreach (Entry entry in entries)
+            foreach (Entry _entry in _entries)
             {
-                if (!savedEntryData.Contains(entry.GetEntryData())) // check whether each item is already saved in the file
+                if (!_savedEntryData.Contains(_entry.GetEntryData())) // check whether each item is already saved in the file
                 {
-                    entryData = entry.GetEntryData();
-                    outputFile.WriteLine(entryData); // You can add text to the file with the WriteLine method
+                    _entryData = _entry.GetEntryData();
+                    outputFile.WriteLine(_entryData); // You can add text to the file with the WriteLine method
                 }
             }
         }
