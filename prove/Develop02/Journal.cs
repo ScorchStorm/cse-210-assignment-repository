@@ -2,7 +2,7 @@ class Journal
 {
     private List<Entry> entries = new List<Entry>();
     private List<Entry> loadedEntries = new List<Entry>();
-    private List<string> prompts = new List<string> { "Who was the most interesting person I interacted with today? ", "What was the best part of my day? ", "How did I see the hand of the Lord in my life today? ", "What was the strongest emotion I felt today? ", "If I had one thing I could do over today, what would it be? ", "Who was kindest to me today? ", "How did I come closer to fulfilling my life goals today? ", "What is the most impressive thing I did today? " };
+    private List<string> prompts = new List<string> { "Who was the most interesting person I interacted with today? ", "What was the best part of my day? ", "How did I see the hand of the Lord in my life today? ", "What was the strongest emotion I felt today? ", "If I had one thing I could do over today what would it be? ", "Who was kindest to me today? ", "How did I come closer to fulfilling my life goals today? ", "What is the most impressive thing I did today? " };
     private File jFile = new File("journal.txt");
     private int index;
     private string prompt;

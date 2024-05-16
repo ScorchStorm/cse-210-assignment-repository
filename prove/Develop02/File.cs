@@ -17,6 +17,8 @@ class File
     public List<Entry> Read()
     {
         savedEntries = new List<Entry>();
+        foreach (Entry entry in savedEntries)
+            savedEntryData.Add(entry.GetEntryData());
         lines = System.IO.File.ReadAllLines(path);
         foreach (string line in lines)
         {
@@ -25,7 +27,10 @@ class File
             prompt = parts[1];
             response = parts[2];
             entry = new Entry(date, prompt, response);
-            savedEntries.Add(entry);
+            if (!savedEntryData.Contains(entry.GetEntryData())) // check whether each item is already saved in the file
+            {
+                savedEntries.Add(entry);
+            }
         }
         return savedEntries;
     }
@@ -39,11 +44,7 @@ class File
         {
             foreach (Entry entry in entries)
             {
-                if (savedEntries.Contains(entry)) // check whether each item is already saved in the file
-                {
-                    continue;
-                }
-                else // save each new entry to the file
+                if (!savedEntryData.Contains(entry.GetEntryData())) // check whether each item is already saved in the file
                 {
                     entryData = entry.GetEntryData();
                     outputFile.WriteLine(entryData); // You can add text to the file with the WriteLine method
