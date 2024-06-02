@@ -24,7 +24,7 @@ class Scripture
         book = Book;
         chapter = Chapter;
         stringReference = book + ' ' + chapter + ':' + verse;
-        Console.WriteLine($"stringReference = {stringReference}");
+        // Console.WriteLine($"stringReference = {stringReference}");
         verses.Add(verse);
         Reference reference = new Reference(text);
         references.Add(reference);
@@ -57,6 +57,7 @@ class Scripture
     public void ShowWords()
     {
         Console.WriteLine();
+        Console.WriteLine();
         Console.WriteLine(stringReference);
         for (int i = 0; i < verses.Count(); i++)
         {
@@ -85,13 +86,8 @@ class Scripture
         {
             Reference reference = references[i];
             float numberToRound = number*(RealWordCounts[i]/RealWordCounts.Sum());
-            Console.WriteLine($"numberToRound = {numberToRound}");
             int hideNumber = (int)Math.Round(numberToRound); // the number of words to hide in each verse
-            // Console.WriteLine("5.5");
-            // reference.ShowWords();
             reference.HideWords(hideNumber);
-            // Console.WriteLine("5.75");
-            reference.ShowWords();
         }
     }
 }

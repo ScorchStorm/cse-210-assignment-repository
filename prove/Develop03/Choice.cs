@@ -11,8 +11,6 @@
 
 class Choice
 {
-    
-    private int index = 1;
     private string input;
     private string prompt;
     private List<string> choices;
@@ -28,6 +26,7 @@ class Choice
         Console.WriteLine(prompt);
         while (true)
         {
+            int index = 1;
             foreach (string choice in choices)
             {
                 Console.WriteLine($"{index}. {choice}");

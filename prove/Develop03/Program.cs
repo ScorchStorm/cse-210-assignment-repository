@@ -65,13 +65,35 @@ class Program
     static void Main(string[] args)
     {
         List<Scripture> scriptures = LoadScriptures(filename);  // Loads the scriptures into memory from the TXT file
-        Scripture scripture = SelectScripture(scriptures);      // Prompts the User to select the index of a scripture
-        // Console.WriteLine("0.");
-        scripture.ShowWords();
-        SelectHiddenType(scripture);                           // Prompts the User to select whether they want hidden words to show the first letter or not
-        // Console.WriteLine("1.");
-        // scripture.ShowWords();
-        Prompt(scripture);                                      // Prompt the user to press the enter key or type quit.
+        Console.WriteLine("Welcome to the Scripture Memorization Program!");
+        Console.WriteLine();
+        Random rand = new Random();
+        int ind = rand.Next(scriptures.Count);
+        Scripture scripture = scriptures[ind];
+
+        string prompt = "Please choose from one of the following options to begin your quest to memorize lifechanging scriptures!";
+        while (true)
+        {
+            List<string> choices = new List<string>{"Select a scripture to memorize", "Be given a random scripture to memorize", "Change hidden word settings", "Exit the program"};
+            Choice choice = new Choice(prompt, choices);
+            int index = choice.MakeChoice();
+            if (index == 0)
+            {
+                scripture = SelectScripture(scriptures);      // Prompts the User to select the index of a scripture
+                Prompt(scripture);
+            }
+            else if (index == 1)
+            {
+                rand = new Random();
+                ind = rand.Next(scriptures.Count);
+                scripture = scriptures[ind];
+                Prompt(scripture);
+            }
+            else if (index == 2)
+            {
+                SelectHiddenType(scripture);                           // Prompts the User to select whether they want hidden words to show the first letter or not
+            }
+        }
     }
 
     public static List<Scripture> LoadScriptures(string filename)
@@ -84,7 +106,7 @@ class Program
     public static Scripture SelectScripture(List<Scripture> scriptures)
     {
         List<string> choices = new List<string>();
-        string prompt = "Enter the index of the scripture you would like to load.";
+        string prompt = "Enter the index of the scripture you would like to memorize.";
         foreach (Scripture scripture in scriptures)
         {
             choices.Add(scripture.ReturnStringReference());
@@ -109,35 +131,26 @@ class Program
 
     static void Prompt(Scripture scripture)
     {
-        // Console.WriteLine("2.");
-        // scripture.ShowWords();
-        int hideNumber = 8; // The number of additional words to hide each time the enter key is pressed
-        // Console.WriteLine("2.5");
-        // scripture.ShowWords();
         while (true)
         {
-            Console.WriteLine("3.");
             scripture.ShowWords();
-            Console.WriteLine("Press Enter to hide more verses or type quit to end the program");
-            string input = Console.ReadLine();
-            if (input == "quit")
+            int hideNumber = 8; // The number of additional words to hide each time the enter key is pressed
             {
-                Environment.Exit(1);                  // Ends the program
-            }
-            else if (input == "")
-            {
-                // Console.WriteLine("4.");
-                // scripture.ShowWords();
-                Console.Clear();                      // Clear the console screen and display the complete scripture, including the reference and the text.
-                // Console.WriteLine("5.");
-                // scripture.ShowWords();
-                scripture.HideWords(hideNumber);      // Hides more words
-                // Console.WriteLine("6.");
-                // scripture.ShowWords();
-            }
-            else
-            {
-                Console.WriteLine("Sorry, that is not a valid input. Please try again.");
+                Console.WriteLine("Press Enter to hide more verses or type quit to end the program");
+                string input = Console.ReadLine();
+                if (input == "quit")
+                {
+                    Environment.Exit(1);                  // Ends the program
+                }
+                else if (input == "")
+                {
+                    Console.Clear();                      // Clear the console screen and display the complete scripture, including the reference and the text.
+                    scripture.HideWords(hideNumber);      // Hides more words
+                }
+                else
+                {
+                    Console.WriteLine("Sorry, that is not a valid input. Please try again.");
+                }
             }
         }
     }
