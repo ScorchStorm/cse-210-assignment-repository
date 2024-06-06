@@ -6,6 +6,7 @@ class Reference
     private List<Word> words = new List<Word>();
     private List<char> punctuation = new List<char>{'(', '?', '<', '=', '[', '.', ',', ';', ']', ')', '!', '-', ':', ' '};
     private int realWordCount = 0; // Does not include punctuation
+    List<int> nonHiddenWordIndexes = new List<int>();
     public Reference(string text)
     {
         List<string> parts = new List<string>();
@@ -26,21 +27,26 @@ class Reference
         }
     }
     
-    public void HideWords(int number)
+    public List<int> GetNonHiddenWords() // returns the indexes of the words that are not hidden
     {
-        int hideNumber = 0;
-        List<int> nonHiddenWordIndexes = new List<int>();
-        for (int i = 0; i < words.Count(); i++)
+        nonHiddenWordIndexes.Clear(); // removes all items from the list
+        for (int i = 0; i < words.Count; i++)
         {
             if (!words[i].GetIsHidden())
             {
                 nonHiddenWordIndexes.Add(i);
             }
         }
+        return nonHiddenWordIndexes;
+    }
+
+    public int HideWords(int number)
+    {
+        int hideNumber;
+        nonHiddenWordIndexes = GetNonHiddenWords();
         if (nonHiddenWordIndexes.Count==0)
         {
-            Console.WriteLine("Congratulations on memorizing a new scripture! Feel free to select another scripture to continue your scripture memorization journey!");
-            Environment.Exit(1);
+            return 0;
         }
         else if (nonHiddenWordIndexes.Count>= number)
         {
@@ -58,6 +64,7 @@ class Reference
             nonHiddenWordIndexes.RemoveAt(index);
             word.Hide();
         }
+        return nonHiddenWordIndexes.Count;
     }
 
     public void HideFirstLetters()

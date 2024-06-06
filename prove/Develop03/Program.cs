@@ -61,10 +61,11 @@ using System;
 class Program
 {
     static string filename = "scripture.txt";
-
     static void Main(string[] args)
     {
         List<Scripture> scriptures = LoadScriptures(filename);  // Loads the scriptures into memory from the TXT file
+        scriptures.Add(new Scripture("2 Nephi", 9, new List<int>{28,29}, new List<string>{"O that cunning plan of the evil one! O the vainness, and the frailties, and the foolishness of men! When they are learned they think they are wise, and they hearken not unto the counsel of God, for they set it aside, supposing they know of themselves, wherefore, their wisdom is foolishness and it profiteth them not. And they shall perish.", "But to be learned is good if they hearken unto the counsels of God."}));
+        // string Book, int Chapter, List<int> Verses, List<string> texts
         Console.WriteLine("Welcome to the Scripture Memorization Program!");
         Console.WriteLine();
         Random rand = new Random();
@@ -91,7 +92,7 @@ class Program
             }
             else if (index == 2)
             {
-                SelectHiddenType(scripture);                           // Prompts the User to select whether they want hidden words to show the first letter or not
+                SelectHiddenType(scriptures);                           // Prompts the User to select whether they want hidden words to show the first letter or not
             }
         }
     }
@@ -116,7 +117,7 @@ class Program
         return scriptures[index];
     }
 
-    public static void SelectHiddenType(Scripture scripture)
+    public static void SelectHiddenType(List<Scripture> scriptures)
     {
         List<bool> options = new List<bool>{false, true};
         string prompt = "Enter the index of the hidden scripture type you would like to use.";
@@ -124,13 +125,17 @@ class Program
         Choice choice = new Choice(prompt, choices);
         int index = choice.MakeChoice();
         if (options[index])
-        {
-            scripture.HideFirstLetters();
+            {
+            foreach (Scripture scripture in scriptures)
+            {
+                scripture.HideFirstLetters();
+            }
         }
     }
 
     static void Prompt(Scripture scripture)
     {
+        int numUnHiddenWords; // An arbitrary non-zero number
         while (true)
         {
             scripture.ShowWords();
@@ -145,7 +150,11 @@ class Program
                 else if (input == "")
                 {
                     Console.Clear();                      // Clear the console screen and display the complete scripture, including the reference and the text.
-                    scripture.HideWords(hideNumber);      // Hides more words
+                    numUnHiddenWords = scripture.HideWords(hideNumber);      // Hides more words
+                    if (numUnHiddenWords == 0)
+                    {
+                        return;
+                    }
                 }
                 else
                 {
