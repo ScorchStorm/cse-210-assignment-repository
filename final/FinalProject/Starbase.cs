@@ -1,9 +1,14 @@
 class Starbase: WeaponsPlatform
 {
     private float repairRate;
-    public Starbase(int maxHealth, int maxShields, List<Weapon> weapons, float repairRate): base(maxHealth, maxShields, weapons)
+    public Starbase(int cost, float maxHealth, float maxShields, List<Weapon> weapons, float repairRate): base(cost, maxHealth, maxShields, weapons)
     {
         this.repairRate = repairRate;
+    }
+
+    public float GetRepairRate()
+    {
+        return repairRate;
     }
 
     public void UpgradeRepairRate(float increase)

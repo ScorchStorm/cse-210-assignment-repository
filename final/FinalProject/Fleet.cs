@@ -6,7 +6,7 @@ class Fleet
     private Ship cruiser;
     private Ship dreadnaught;
     private StarSystem position;
-    // private Faction faction;
+    private Faction faction;
     public Fleet(Admiral admiral, Ship scout, Ship cruiser, Ship dreadnaught, Faction faction)
     {
         this.admiral = admiral;
@@ -30,23 +30,20 @@ class Fleet
     {
         foreach (Ship ship in ships)
         {
-            if (ship.GetHealth() <= 0)
+            Ship target = enemyFleet.GetShips()[0];
+            ship.Attack(target, bonus);
+            if (target.GetHealth() <= 0)
             {
-                Console.WriteLine("Removing Ship");
-                enemyFleet.RemoveShip(ship);
-            }
-            else
-            {
-                Ship target = enemyFleet.GetShips()[0];
-                ship.Attack(target, bonus);
+                Console.WriteLine($"{target.GetName()} has been destroyed!");
+                enemyFleet.RemoveShip(target);
             }
         }
     }
 
     public void Move(StarSystem system)
     {
-        // position.SetFleet(null); // I don't know if this is the right way to do this...
-        // position = system;
+        position.SetFleet(null); // I don't know if this is the right way to do this...
+        position = system;
         if (system.GetFleet() != null)
         {
             system.Battle(this);

@@ -1,7 +1,7 @@
 class ResearchStation: Platform
 {
     private float researchRate;
-    public ResearchStation(int maxHealth, int maxShields, float researchRate): base(maxHealth, maxShields)
+    public ResearchStation(int cost, float maxHealth, float maxShields, float researchRate): base(cost, maxHealth, maxShields)
     {
         this.researchRate = researchRate;
     }

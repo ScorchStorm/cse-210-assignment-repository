@@ -1,0 +1,1827 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:bin/$(Platform)
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+
+#---------------------------------- Content ---------------------------------#
+
+#begin ../../../final/FinalProject/images/Advent - Radiance Battleship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Advent - Radiance Battleship.png;Advent - Radiance Battleship.png
+
+#begin ../../../final/FinalProject/images/Advent - Rebels - Eradica Titan.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Advent - Rebels - Eradica Titan.png;Advent - Rebels - Eradica Titan.png
+
+#begin ../../../final/FinalProject/images/Advent - Transcencia Starbase.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Advent - Transcencia Starbase.png;Advent - Transcencia Starbase.png
+
+#begin ../../../final/FinalProject/images/Andorian Empire - Kumari Class Warship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Andorian Empire - Kumari Class Warship.png;Andorian Empire - Kumari Class Warship.png
+
+#begin ../../../final/FinalProject/images/Andorian Empire - Ushaan Shran.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Andorian Empire - Ushaan Shran.png;Andorian Empire - Ushaan Shran.png
+
+#begin ../../../final/FinalProject/images/Antecedant - MegaStructure.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Antecedant - MegaStructure.png;Antecedant - MegaStructure.png
+
+#begin ../../../final/FinalProject/images/Aperture Science - Abomination Turret.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Aperture Science - Abomination Turret.png;Aperture Science - Abomination Turret.png
+
+#begin ../../../final/FinalProject/images/Aperture Science - Animal King Turret.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Aperture Science - Animal King Turret.png;Aperture Science - Animal King Turret.png
+
+#begin ../../../final/FinalProject/images/Aperture Science - GLaDOS Potato.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Aperture Science - GLaDOS Potato.png;Aperture Science - GLaDOS Potato.png
+
+#begin ../../../final/FinalProject/images/Aperture Science - GLaDOS.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Aperture Science - GLaDOS.png;Aperture Science - GLaDOS.png
+
+#begin ../../../final/FinalProject/images/Aperture Science - Insignia.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Aperture Science - Insignia.png;Aperture Science - Insignia.png
+
+#begin ../../../final/FinalProject/images/Aperture Science - Laboratories.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Aperture Science - Laboratories.png;Aperture Science - Laboratories.png
+
+#begin ../../../final/FinalProject/images/Aperture Science - Radioactive High-Voltage Laser.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Aperture Science - Radioactive High-Voltage Laser.png;Aperture Science - Radioactive High-Voltage Laser.png
+
+#begin ../../../final/FinalProject/images/Aperture Science - Wheatley Laboratories.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Aperture Science - Wheatley Laboratories.png;Aperture Science - Wheatley Laboratories.png
+
+#begin ../../../final/FinalProject/images/Aperture Science - Wheatley.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Aperture Science - Wheatley.png;Aperture Science - Wheatley.png
+
+#begin ../../../final/FinalProject/images/Artists United - Advanced Sandbox Ship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Artists United - Advanced Sandbox Ship.png;Artists United - Advanced Sandbox Ship.png
+
+#begin ../../../final/FinalProject/images/Artists United - Bladed Ship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Artists United - Bladed Ship.png;Artists United - Bladed Ship.png
+
+#begin ../../../final/FinalProject/images/Artists United - Dinosaur Habitat.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Artists United - Dinosaur Habitat.png;Artists United - Dinosaur Habitat.png
+
+#begin ../../../final/FinalProject/images/Artists United - Sea Attack Fighter.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Artists United - Sea Attack Fighter.png;Artists United - Sea Attack Fighter.png
+
+#begin ../../../final/FinalProject/images/Artists United - Sea Destroyer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Artists United - Sea Destroyer.png;Artists United - Sea Destroyer.png
+
+#begin ../../../final/FinalProject/images/Artists United - Spike Ship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Artists United - Spike Ship.png;Artists United - Spike Ship.png
+
+#begin ../../../final/FinalProject/images/Artists United - Supported Structure.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Artists United - Supported Structure.png;Artists United - Supported Structure.png
+
+#begin ../../../final/FinalProject/images/Artists United - Swx55 Speeder.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Artists United - Swx55 Speeder.png;Artists United - Swx55 Speeder.png
+
+#begin ../../../final/FinalProject/images/Bajoran Provisional Government - Assault Ship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Bajoran Provisional Government - Assault Ship.png;Bajoran Provisional Government - Assault Ship.png
+
+#begin ../../../final/FinalProject/images/Boeing - Futuristic Attack Helicopter.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Boeing - Futuristic Attack Helicopter.png;Boeing - Futuristic Attack Helicopter.png
+
+#begin ../../../final/FinalProject/images/Boeing - Futuristic Jet.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Boeing - Futuristic Jet.png;Boeing - Futuristic Jet.png
+
+#begin ../../../final/FinalProject/images/Boeing - Prototype Plane - Future.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Boeing - Prototype Plane - Future.png;Boeing - Prototype Plane - Future.png
+
+#begin ../../../final/FinalProject/images/Borg Collective - Assimilator Class Star Destroyer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Borg Collective - Assimilator Class Star Destroyer.png;Borg Collective - Assimilator Class Star Destroyer.png
+
+#begin ../../../final/FinalProject/images/Breen Confederacy - Cruiser 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Breen Confederacy - Cruiser 1.png;Breen Confederacy - Cruiser 1.png
+
+#begin ../../../final/FinalProject/images/Cardassian Union - Galor Class Cruiser 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Cardassian Union - Galor Class Cruiser 1.png;Cardassian Union - Galor Class Cruiser 1.png
+
+#begin ../../../final/FinalProject/images/Cardassian Union - Ghemor Class Flight Deck Cruiser.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Cardassian Union - Ghemor Class Flight Deck Cruiser.png;Cardassian Union - Ghemor Class Flight Deck Cruiser.png
+
+#begin ../../../final/FinalProject/images/Cardassian Union - Insignia.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Cardassian Union - Insignia.png;Cardassian Union - Insignia.png
+
+#begin ../../../final/FinalProject/images/Cardassian Union - Shipyard.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Cardassian Union - Shipyard.png;Cardassian Union - Shipyard.png
+
+#begin ../../../final/FinalProject/images/Cardassian Union - Vessel.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Cardassian Union - Vessel.png;Cardassian Union - Vessel.png
+
+#begin ../../../final/FinalProject/images/Caretaker - Caretaker's Array.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Caretaker - Caretaker's Array.png;Caretaker - Caretaker's Array.png
+
+#begin ../../../final/FinalProject/images/CIS - Munificient Class Star Frigate.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/CIS - Munificient Class Star Frigate.png;CIS - Munificient Class Star Frigate.png
+
+#begin ../../../final/FinalProject/images/CIS - Providience Class Fleet Carrier.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/CIS - Providience Class Fleet Carrier.png;CIS - Providience Class Fleet Carrier.png
+
+#begin ../../../final/FinalProject/images/CIS - Recurscant Class Light Frigate.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/CIS - Recurscant Class Light Frigate.png;CIS - Recurscant Class Light Frigate.png
+
+#begin ../../../final/FinalProject/images/Confederacy of Independant Systems - Insignia.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Confederacy of Independant Systems - Insignia.png;Confederacy of Independant Systems - Insignia.png
+
+#begin ../../../final/FinalProject/images/Covenant Empire - Insignia.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Covenant Empire - Insignia.png;Covenant Empire - Insignia.png
+
+#begin ../../../final/FinalProject/images/Cylons - Cylon Basestar.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Cylons - Cylon Basestar.png;Cylons - Cylon Basestar.png
+
+#begin ../../../final/FinalProject/images/Darth Reven's Sith Empire - Insignia.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Darth Reven's Sith Empire - Insignia.png;Darth Reven's Sith Empire - Insignia.png
+
+#begin ../../../final/FinalProject/images/Darth Reven's Sith Empire - Interdictor.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Darth Reven's Sith Empire - Interdictor.png;Darth Reven's Sith Empire - Interdictor.png
+
+#begin ../../../final/FinalProject/images/Divided Parallel - SandSkipper.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Divided Parallel - SandSkipper.png;Divided Parallel - SandSkipper.png
+
+#begin ../../../final/FinalProject/images/Dominion - Emblem.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Dominion - Emblem.png;Dominion - Emblem.png
+
+#begin ../../../final/FinalProject/images/Dominion - Scarab.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Dominion - Scarab.png;Dominion - Scarab.png
+
+#begin ../../../final/FinalProject/images/Dominion - Speed Ship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Dominion - Speed Ship.png;Dominion - Speed Ship.png
+
+#begin ../../../final/FinalProject/images/Dominion - V1 Dreadnaught - Incoming.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Dominion - V1 Dreadnaught - Incoming.png;Dominion - V1 Dreadnaught - Incoming.png
+
+#begin ../../../final/FinalProject/images/Fel Empire - Pallaeon Class Star Destroyer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Fel Empire - Pallaeon Class Star Destroyer.png;Fel Empire - Pallaeon Class Star Destroyer.png
+
+#begin ../../../final/FinalProject/images/Ferengi Alliance - D'Kora Marauder 2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Ferengi Alliance - D'Kora Marauder 2.png;Ferengi Alliance - D'Kora Marauder 2.png
+
+#begin ../../../final/FinalProject/images/First Order - Resurgent Class Star Destroyer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/First Order - Resurgent Class Star Destroyer.png;First Order - Resurgent Class Star Destroyer.png
+
+#begin ../../../final/FinalProject/images/First Order - Upsilon-Class Command Shuttle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/First Order - Upsilon-Class Command Shuttle.png;First Order - Upsilon-Class Command Shuttle.png
+
+#begin ../../../final/FinalProject/images/Flat Earth Society - The Firmament.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Flat Earth Society - The Firmament.png;Flat Earth Society - The Firmament.png
+
+#begin ../../../final/FinalProject/images/Forerunner Ecumene - Sentinel.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Forerunner Ecumene - Sentinel.png;Forerunner Ecumene - Sentinel.png
+
+#begin ../../../final/FinalProject/images/Forerunner Ecumene - Symbol - Pure White.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Forerunner Ecumene - Symbol - Pure White.png;Forerunner Ecumene - Symbol - Pure White.png
+
+#begin ../../../final/FinalProject/images/Formic Hive Mind 2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Formic Hive Mind 2.png;Formic Hive Mind 2.png
+
+#begin ../../../final/FinalProject/images/Galactic Empire - Acclamator Model.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Galactic Empire - Acclamator Model.png;Galactic Empire - Acclamator Model.png
+
+#begin ../../../final/FinalProject/images/Galactic Empire - Death Star II.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Galactic Empire - Death Star II.png;Galactic Empire - Death Star II.png
+
+#begin ../../../final/FinalProject/images/Galactic Empire - Imperial Star Destroyer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Galactic Empire - Imperial Star Destroyer.png;Galactic Empire - Imperial Star Destroyer.png
+
+#begin ../../../final/FinalProject/images/Galactic Empire - Secutor Fleet Carrier.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Galactic Empire - Secutor Fleet Carrier.png;Galactic Empire - Secutor Fleet Carrier.png
+
+#begin ../../../final/FinalProject/images/Galactic Empire - Venator Class Star Destroyer 3.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Galactic Empire - Venator Class Star Destroyer 3.png;Galactic Empire - Venator Class Star Destroyer 3.png
+
+#begin ../../../final/FinalProject/images/Galactic Republic -  Venator Class Star Destroyer 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Galactic Republic -  Venator Class Star Destroyer 1.png;Galactic Republic -  Venator Class Star Destroyer 1.png
+
+#begin ../../../final/FinalProject/images/Galactic Republic - Insignia.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Galactic Republic - Insignia.png;Galactic Republic - Insignia.png
+
+#begin ../../../final/FinalProject/images/Galactic Republic - Valor Class Cruiser.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Galactic Republic - Valor Class Cruiser.png;Galactic Republic - Valor Class Cruiser.png
+
+#begin ../../../final/FinalProject/images/Galactic Republic - Venator Class Star Destroyer 2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Galactic Republic - Venator Class Star Destroyer 2.png;Galactic Republic - Venator Class Star Destroyer 2.png
+
+#begin ../../../final/FinalProject/images/Hirogen - Hirogen Warship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Hirogen - Hirogen Warship.png;Hirogen - Hirogen Warship.png
+
+#begin ../../../final/FinalProject/images/Hylo Visz's Smuggling Contingent - Cargo Freighter.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Hylo Visz's Smuggling Contingent - Cargo Freighter.png;Hylo Visz's Smuggling Contingent - Cargo Freighter.png
+
+#begin ../../../final/FinalProject/images/Internet - Minecraft - Creeper Head.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Internet - Minecraft - Creeper Head.png;Internet - Minecraft - Creeper Head.png
+
+#begin ../../../final/FinalProject/images/Internet - Minecraft - Pig with Sword.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Internet - Minecraft - Pig with Sword.png;Internet - Minecraft - Pig with Sword.png
+
+#begin ../../../final/FinalProject/images/Internet - Minecraft - Steampunk Hammerhead Shark.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Internet - Minecraft - Steampunk Hammerhead Shark.png;Internet - Minecraft - Steampunk Hammerhead Shark.png
+
+#begin ../../../final/FinalProject/images/IRL - F-22 Combat Hammer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/IRL - F-22 Combat Hammer.png;IRL - F-22 Combat Hammer.png
+
+#begin ../../../final/FinalProject/images/IRL - F-22 Raptor.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/IRL - F-22 Raptor.png;IRL - F-22 Raptor.png
+
+#begin ../../../final/FinalProject/images/IRL - Fish.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/IRL - Fish.png;IRL - Fish.png
+
+#begin ../../../final/FinalProject/images/IRL - Navy - Aircraft Carrier.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/IRL - Navy - Aircraft Carrier.png;IRL - Navy - Aircraft Carrier.png
+
+#begin ../../../final/FinalProject/images/IRL - Navy - Battleship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/IRL - Navy - Battleship.png;IRL - Navy - Battleship.png
+
+#begin ../../../final/FinalProject/images/IRL - Navy - Caravel - Dominican.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/IRL - Navy - Caravel - Dominican.png;IRL - Navy - Caravel - Dominican.png
+
+#begin ../../../final/FinalProject/images/IRL - Navy - Caravel - Spanish.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/IRL - Navy - Caravel - Spanish.png;IRL - Navy - Caravel - Spanish.png
+
+#begin ../../../final/FinalProject/images/IRL - Navy - Dreadnought.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/IRL - Navy - Dreadnought.png;IRL - Navy - Dreadnought.png
+
+#begin ../../../final/FinalProject/images/IRL - Navy - Ship of the Line - American 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/IRL - Navy - Ship of the Line - American 1.png;IRL - Navy - Ship of the Line - American 1.png
+
+#begin ../../../final/FinalProject/images/IRL - Shark Bait Water Craft.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/IRL - Shark Bait Water Craft.png;IRL - Shark Bait Water Craft.png
+
+#begin ../../../final/FinalProject/images/Japanese Imperial Navy - Battleship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Japanese Imperial Navy - Battleship.png;Japanese Imperial Navy - Battleship.png
+
+#begin ../../../final/FinalProject/images/Klingon Empire - Negh'var - Glory-01.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Klingon Empire - Negh'var - Glory-01.png;Klingon Empire - Negh'var - Glory-01.png
+
+#begin ../../../final/FinalProject/images/Klingon Empire - Starbase MUPWL.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Klingon Empire - Starbase MUPWL.png;Klingon Empire - Starbase MUPWL.png
+
+#begin ../../../final/FinalProject/images/Klingon Empire - Vor'cha Class Cruiser.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Klingon Empire - Vor'cha Class Cruiser.png;Klingon Empire - Vor'cha Class Cruiser.png
+
+#begin ../../../final/FinalProject/images/Klingon Empire Insignia.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Klingon Empire Insignia.png;Klingon Empire Insignia.png
+
+#begin ../../../final/FinalProject/images/Krill - Krill Destroyer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Krill - Krill Destroyer.png;Krill - Krill Destroyer.png
+
+#begin ../../../final/FinalProject/images/Mandalorian empire - Mandalorian Cruiser - Landed.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Mandalorian empire - Mandalorian Cruiser - Landed.png;Mandalorian empire - Mandalorian Cruiser - Landed.png
+
+#begin ../../../final/FinalProject/images/Maquis Resistance - Federation Attack Fighter 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Maquis Resistance - Federation Attack Fighter 1.png;Maquis Resistance - Federation Attack Fighter 1.png
+
+#begin ../../../final/FinalProject/images/No Man's Sky - Venator at an Angle.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/No Man's Sky - Venator at an Angle.png;No Man's Sky - Venator at an Angle.png
+
+#begin ../../../final/FinalProject/images/Planetary Union - Heavy Cruiser - USS Olympia.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Planetary Union - Heavy Cruiser - USS Olympia.png;Planetary Union - Heavy Cruiser - USS Olympia.png
+
+#begin ../../../final/FinalProject/images/Planetary Union - The Orville.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Planetary Union - The Orville.png;Planetary Union - The Orville.png
+
+#begin ../../../final/FinalProject/images/Pop Culture - Sewage Bus - Driving Downhill.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Pop Culture - Sewage Bus - Driving Downhill.png;Pop Culture - Sewage Bus - Driving Downhill.png
+
+#begin ../../../final/FinalProject/images/Protoss Protectorate - Emblem 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Protoss Protectorate - Emblem 1.png;Protoss Protectorate - Emblem 1.png
+
+#begin ../../../final/FinalProject/images/Rakatan Infinite Empire - Star Forge.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Rakatan Infinite Empire - Star Forge.png;Rakatan Infinite Empire - Star Forge.png
+
+#begin ../../../final/FinalProject/images/Reapers - Sovereign Class Capital Ship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Reapers - Sovereign Class Capital Ship.png;Reapers - Sovereign Class Capital Ship.png
+
+#begin ../../../final/FinalProject/images/Rebel Alliance - GR-75 Transport.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Rebel Alliance - GR-75 Transport.png;Rebel Alliance - GR-75 Transport.png
+
+#begin ../../../final/FinalProject/images/Rebel Alliance - Home One.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Rebel Alliance - Home One.png;Rebel Alliance - Home One.png
+
+#begin ../../../final/FinalProject/images/Rebel Alliance - MC80 Liberty Illustration.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Rebel Alliance - MC80 Liberty Illustration.png;Rebel Alliance - MC80 Liberty Illustration.png
+
+#begin ../../../final/FinalProject/images/Rebel Alliance - Nebulon B Frigate.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Rebel Alliance - Nebulon B Frigate.png;Rebel Alliance - Nebulon B Frigate.png
+
+#begin ../../../final/FinalProject/images/Reconstituted Sith Empire - Grand Moff Odile Vaiken.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Reconstituted Sith Empire - Grand Moff Odile Vaiken.png;Reconstituted Sith Empire - Grand Moff Odile Vaiken.png
+
+#begin ../../../final/FinalProject/images/Reconstituted Sith Empire - Harrower Class SD.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Reconstituted Sith Empire - Harrower Class SD.png;Reconstituted Sith Empire - Harrower Class SD.png
+
+#begin ../../../final/FinalProject/images/Romulan Star Empire - Insignia 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Romulan Star Empire - Insignia 1.png;Romulan Star Empire - Insignia 1.png
+
+#begin ../../../final/FinalProject/images/Romulan Star Empire - Shadow Class.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Romulan Star Empire - Shadow Class.png;Romulan Star Empire - Shadow Class.png
+
+#begin ../../../final/FinalProject/images/Romulan Star Empire - Valdore Class Warbird.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Romulan Star Empire - Valdore Class Warbird.png;Romulan Star Empire - Valdore Class Warbird.png
+
+#begin ../../../final/FinalProject/images/Romulan Star Empire - Warbird 2 - Face to Face.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Romulan Star Empire - Warbird 2 - Face to Face.png;Romulan Star Empire - Warbird 2 - Face to Face.png
+
+#begin ../../../final/FinalProject/images/Science - James Webb Space Telescope.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Science - James Webb Space Telescope.png;Science - James Webb Space Telescope.png
+
+#begin ../../../final/FinalProject/images/Species 8472 - Undine Nicor Bioship 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Species 8472 - Undine Nicor Bioship 1.png;Species 8472 - Undine Nicor Bioship 1.png
+
+#begin ../../../final/FinalProject/images/Speices 8472 - Undine Nicor Bioship 2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Speices 8472 - Undine Nicor Bioship 2.png;Speices 8472 - Undine Nicor Bioship 2.png
+
+#begin ../../../final/FinalProject/images/Sphere-with-blender.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Sphere-with-blender.png;Sphere-with-blender.png
+
+#begin ../../../final/FinalProject/images/Star Trek - Tash's Catapult 2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Star Trek - Tash's Catapult 2.png;Star Trek - Tash's Catapult 2.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Defiant Class 3.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Defiant Class 3.png;StarFleet - Defiant Class 3.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Elite Federation Fleet.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Elite Federation Fleet.png;StarFleet - Elite Federation Fleet.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Galaxy Class 3.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Galaxy Class 3.png;StarFleet - Galaxy Class 3.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Insignia - Command 3.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Insignia - Command 3.png;StarFleet - Insignia - Command 3.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Insignia - Federation of Planets 3.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Insignia - Federation of Planets 3.png;StarFleet - Insignia - Federation of Planets 3.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Insignia - Operations.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Insignia - Operations.png;StarFleet - Insignia - Operations.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Miranda Class 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Miranda Class 1.png;StarFleet - Miranda Class 1.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Norway Class 3.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Norway Class 3.png;StarFleet - Norway Class 3.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Nova Class 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Nova Class 1.png;StarFleet - Nova Class 1.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Ournal Class Starbase 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Ournal Class Starbase 1.png;StarFleet - Ournal Class Starbase 1.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Tiburon Class Heavy Destroyer - Upper.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Tiburon Class Heavy Destroyer - Upper.png;StarFleet - Tiburon Class Heavy Destroyer - Upper.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Tiburon Class Heavy Destroyer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Tiburon Class Heavy Destroyer.png;StarFleet - Tiburon Class Heavy Destroyer.png
+
+#begin ../../../final/FinalProject/images/StarFleet - Voyager.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/StarFleet - Voyager.png;StarFleet - Voyager.png
+
+#begin ../../../final/FinalProject/images/Terran - Raynor's Raider's - Hyperion.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Terran - Raynor's Raider's - Hyperion.png;Terran - Raynor's Raider's - Hyperion.png
+
+#begin ../../../final/FinalProject/images/The Kaylon - Kaylon Sphere.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/The Kaylon - Kaylon Sphere.png;The Kaylon - Kaylon Sphere.png
+
+#begin ../../../final/FinalProject/images/Trader Emergency Coalition - Bomber.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Trader Emergency Coalition - Bomber.png;Trader Emergency Coalition - Bomber.png
+
+#begin ../../../final/FinalProject/images/Trader Emergency Coalition - Kol Battleship - Red.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Trader Emergency Coalition - Kol Battleship - Red.png;Trader Emergency Coalition - Kol Battleship - Red.png
+
+#begin ../../../final/FinalProject/images/Trader Emergency Coalition - Kol Battleship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Trader Emergency Coalition - Kol Battleship.png;Trader Emergency Coalition - Kol Battleship.png
+
+#begin ../../../final/FinalProject/images/Trader Emergency Coalition - Rebels - Raganrov Titan.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Trader Emergency Coalition - Rebels - Raganrov Titan.png;Trader Emergency Coalition - Rebels - Raganrov Titan.png
+
+#begin ../../../final/FinalProject/images/Unknown - Alien Ship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Unknown - Alien Ship.png;Unknown - Alien Ship.png
+
+#begin ../../../final/FinalProject/images/Unknown - Dagger Nebula.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Unknown - Dagger Nebula.png;Unknown - Dagger Nebula.png
+
+#begin ../../../final/FinalProject/images/Unknown - Elachi Shesar Cruiser.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Unknown - Elachi Shesar Cruiser.png;Unknown - Elachi Shesar Cruiser.png
+
+#begin ../../../final/FinalProject/images/Unknown - Ushaa Han.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Unknown - Ushaa Han.png;Unknown - Ushaa Han.png
+
+#begin ../../../final/FinalProject/images/UNSC - Impulse Class Stealth Frigate.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/UNSC - Impulse Class Stealth Frigate.png;UNSC - Impulse Class Stealth Frigate.png
+
+#begin ../../../final/FinalProject/images/UNSC - Rememberance Class Frigate.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/UNSC - Rememberance Class Frigate.png;UNSC - Rememberance Class Frigate.png
+
+#begin ../../../final/FinalProject/images/UNSC - Valkyrie Class Light Cruiser.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/UNSC - Valkyrie Class Light Cruiser.png;UNSC - Valkyrie Class Light Cruiser.png
+
+#begin ../../../final/FinalProject/images/Vasari - Biological form.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Vasari - Biological form.png;Vasari - Biological form.png
+
+#begin ../../../final/FinalProject/images/Vasari - Loyalists - Vorastra Titan 2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Vasari - Loyalists - Vorastra Titan 2.png;Vasari - Loyalists - Vorastra Titan 2.png
+
+#begin ../../../final/FinalProject/images/Vasari - Rebels - Kultorask Titan.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Vasari - Rebels - Kultorask Titan.png;Vasari - Rebels - Kultorask Titan.png
+
+#begin ../../../final/FinalProject/images/Vasari - Skarovas Enforcer.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Vasari - Skarovas Enforcer.png;Vasari - Skarovas Enforcer.png
+
+#begin ../../../final/FinalProject/images/Vidiians - Vidiian Starship (2371-2372).png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Vidiians - Vidiian Starship (2371-2372).png;Vidiians - Vidiian Starship (2371-2372).png
+
+#begin ../../../final/FinalProject/images/Voth - City Ship 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Voth - City Ship 1.png;Voth - City Ship 1.png
+
+#begin ../../../final/FinalProject/images/Xindi Alliance - Aquatic Dreadnought.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Xindi Alliance - Aquatic Dreadnought.png;Xindi Alliance - Aquatic Dreadnought.png
+
+#begin ../../../final/FinalProject/images/Xindi Alliance - Degra's Ship.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Xindi Alliance - Degra's Ship.png;Xindi Alliance - Degra's Ship.png
+
+#begin ../../../final/FinalProject/images/Xindi Alliance - Insectoid Ship 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Xindi Alliance - Insectoid Ship 1.png;Xindi Alliance - Insectoid Ship 1.png
+
+#begin ../../../final/FinalProject/images/Xindi Alliance - Insectoid Ship 2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Xindi Alliance - Insectoid Ship 2.png;Xindi Alliance - Insectoid Ship 2.png
+
+#begin ../../../final/FinalProject/images/Xindi Alliance - Primate Ship 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Xindi Alliance - Primate Ship 1.png;Xindi Alliance - Primate Ship 1.png
+
+#begin ../../../final/FinalProject/images/Xindi Alliance - Primate Ship 2.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Xindi Alliance - Primate Ship 2.png;Xindi Alliance - Primate Ship 2.png
+
+#begin ../../../final/FinalProject/images/Xindi Alliance - Reptilian Ship 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Xindi Alliance - Reptilian Ship 1.png;Xindi Alliance - Reptilian Ship 1.png
+
+#begin ../../../final/FinalProject/images/Xindi Alliance - Super Weapon.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Xindi Alliance - Super Weapon.png;Xindi Alliance - Super Weapon.png
+
+#begin ../../../final/FinalProject/images/Zerg Swarm - Emblem 1.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../../final/FinalProject/images/Zerg Swarm - Emblem 1.png;Zerg Swarm - Emblem 1.png
+

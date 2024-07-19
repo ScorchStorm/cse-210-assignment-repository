@@ -1,15 +1,27 @@
 class Platform
 {
+    private int cost;
     protected float maxHealth;
     protected float health;
     protected float maxShields;
     protected float shields;
-    public Platform(float maxHealth, float maxShields)
+    public Platform(int cost, float maxHealth, float maxShields)
     {
+        this.cost = cost;
         this.maxHealth = maxHealth;
         health = maxHealth;
         this.maxShields = maxShields;
         shields = maxShields;
+    }
+
+    public int GetCost()
+    {
+        return cost;
+    }
+
+    public void SetCost(int cost)
+    {
+        this.cost = cost;
     }
 
     public virtual void Defend(int points, float tracking)
@@ -29,6 +41,11 @@ class Platform
     public float GetHealth()
     {
         return health;
+    }
+
+    public float GetShields()
+    {
+        return shields;
     }
 
     public void Repair(float fraction)

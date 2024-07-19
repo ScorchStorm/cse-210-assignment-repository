@@ -1,4 +1,4 @@
 class Turret: WeaponsPlatform
 {
-    public Turret(int maxHealth, int maxShields, List<Weapon> weapons): base(maxHealth, maxShields, weapons) {}
+    public Turret(int cost, float maxHealth, float maxShields, List<Weapon> weapons): base(cost, maxHealth, maxShields, weapons) {}
 }

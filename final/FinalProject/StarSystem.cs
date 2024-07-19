@@ -7,11 +7,44 @@ class StarSystem
     private int strategicValue;
     private List<StarSystem> hyperlanes = new List<StarSystem>();
     private string description;
-    public StarSystem(string name, int strategicValue, string description)
+    private int positionX;
+    private int positionY;
+    public StarSystem(string name, int strategicValue, int positionX, int positionY, string description)
     {
         this.name = name;
         this.strategicValue = strategicValue;
+        this.positionX = positionX;
+        this.positionY = positionY;
         this.description = description;
+    }
+
+    public int getPositionX()
+    {
+        return positionX;
+    }
+
+    public int getPositionY()
+    {
+        return positionY;
+    }
+
+    public void RemoveStation(Platform station)
+    {
+        stations.Remove(station);
+        if  (station is WeaponsPlatform weaponsPlatform)
+        {
+            armedStations.Remove(weaponsPlatform);
+        }
+    }
+
+    public void AddStation(Platform station)
+    {
+        stations.Add(station);
+        if  (station is WeaponsPlatform weaponsPlatform)
+        {
+            armedStations.Add(weaponsPlatform);
+        }
+
     }
 
     public void AddHyperLane(StarSystem starSystem)

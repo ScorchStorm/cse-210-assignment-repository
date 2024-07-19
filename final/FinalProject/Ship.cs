@@ -4,11 +4,9 @@ class Ship: WeaponsPlatform
 {
     private string className;
     private float evasion;
-    private int cost;
-    public Ship(float maxHealth, float maxShields, List<Weapon> weapons, float evasion, int cost, string className): base(maxHealth, maxShields, weapons)
+    public Ship(int cost, float maxHealth, float maxShields, List<Weapon> weapons, float evasion, string className): base(cost, maxHealth, maxShields, weapons)
     {
         this.evasion = evasion;
-        this.cost = cost;
         this.className = className;
     }
 
@@ -28,14 +26,9 @@ class Ship: WeaponsPlatform
         return className;
     }
 
-    public int GetCost()
+    public float GetEvasion()
     {
-        return cost;
-    }
-
-    public void SetCost(int cost)
-    {
-        this.cost = cost;
+        return evasion;
     }
 
     public override void Defend(int points, float tracking)
