@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System.Collections.Generic;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -6,16 +7,13 @@ namespace StarWarsConquest;
 
 public class Game1 : Game
 {
+    SpriteBatch _spriteBatch;
+    List<Sprite> sprites = new List<Sprite>();
     private GraphicsDeviceManager _graphics;
-    private SpriteBatch _spriteBatch;
-    private Texture2D ship;
-    private Vector2 position;
-    string pictureName;
+    private SceneManager sceneManager;
 
-    public Game1(int positionX, int positionY, string pictureName)
+    public Game1()
     {
-        position = new Vector2(positionX, positionY); // Example
-        this.pictureName = pictureName;
         _graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
@@ -26,12 +24,38 @@ public class Game1 : Game
         // TODO: Add your initialization logic here
 
         base.Initialize();
+        // LoadContent(); // will this fix the error "The GraphicsDevice must not be null when creating new resources.'"? // No it did not... =(
     }
 
+    // protected void AddContent(int xPosition, int yPosition, string imageName, float scale, Color color)
+    // {
+    //     // LoadContent();
+    //     _spriteBatch = new SpriteBatch(GraphicsDevice);
+    //     Texture2D texture = Content.Load<Texture2D>(imageName);
+    //     int width = (int)(texture.Width*scale);
+    //     int height = (int)(texture.Height*scale);
+    //     int x = xPosition - width/2; // the x-position of the left side of the image
+    //     int y = yPosition - height/2; // the y-position of the top side of the image
+    //     Rectangle rect = new Rectangle(x, y, width, height);
+    //     // _spriteBatch.Draw(texture, rect, color);
+    //     Sprite sprite = new Sprite(content, imageName, xPosition, yPosition, scale);
+    // }
+
+    // protected void AddSprite(string imageName, int xPosition, int yPosition, float scale)
+    // {
+    //     Sprite sprite = new Sprite(content, imageName, xPosition, yPosition, scale);
+    //     sprites.Add(sprite);
+    // }
+
+    // protected override void LoadContent(int positionX, int positionY, string pictureName)
     protected override void LoadContent()
     {
+        // private SpriteBatch _spriteBatch;
+        // private Texture2D ship;
+        // private Vector2 position;
+        // string pictureName;
         _spriteBatch = new SpriteBatch(GraphicsDevice);
-        ship = Content.Load<Texture2D>(pictureName);
+        // Texture2D ship = Content.Load<Texture2D>(imageName);
         // TODO: use this.Content to load your game content here
     }
 
@@ -45,15 +69,47 @@ public class Game1 : Game
         base.Update(gameTime);
     }
 
-    protected override void Draw(GameTime gameTime)
+    // protected override void Draw(GameTime gameTime)
+    // {
+    //     GraphicsDevice.Clear(Color.CornflowerBlue); // Background color can be changed here
+
+    //     // TODO: Add your drawing code here
+    //     _spriteBatch.Begin(samplerState:SamplerState.PointClamp);
+    //     _spriteBatch.Draw(ship, position, Color.White);
+    //     _spriteBatch.End();
+
+    //     base.Draw(gameTime);
+    // }
+
+    protected override void Draw(GameTime gameTime) // from Nick's Code
     {
-        GraphicsDevice.Clear(Color.CornflowerBlue); // Background color can be changed here
+        GraphicsDevice.Clear(Color.CornflowerBlue);
 
         // TODO: Add your drawing code here
-        _spriteBatch.Begin(samplerState:SamplerState.PointClamp);
-        _spriteBatch.Draw(ship,position,Color.White);
+        _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
+        // foreach (Sprite sprite in sprites)
+        // {
+        //     sprite.Draw(_spriteBatch);
+        // }
+        sceneManager.GetCurrentScene().Draw(_spriteBatch);
         _spriteBatch.End();
 
         base.Draw(gameTime);
+    }
+
+    public void DrawGalaxyMap()
+    {
+        GalacticMap galaxyMap = new GalacticMap();
+        // List<List<StarSystem>> hyperlanes = galaxyMap.GetHyperLanes();
+        List<StarSystem> starSystems = galaxyMap.GetStarSystems();
+        foreach (StarSystem system in starSystems)
+        {
+            int xPosition = system.GetXPosition();
+            int yPosition = system.GetYPosition();
+            string textureName = system.GetTextureName();
+            float scale = 1;
+            AddContent(xPosition, yPosition, textureName, scale, Color.White);
+            // AddSprite(textureName, xPosition, yPosition, scale);
+        }
     }
 }

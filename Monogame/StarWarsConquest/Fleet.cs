@@ -38,7 +38,7 @@ class Fleet
             ship.Attack(target, bonus);
             if (target.GetHealth() <= 0)
             {
-                Console.WriteLine($"{target.GetName()} has been destroyed!");
+                Console.WriteLine($"{target.GetClassName()} has been destroyed!");
                 enemyFleet.RemoveShip(target);
             }
         }

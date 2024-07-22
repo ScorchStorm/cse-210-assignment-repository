@@ -1,11 +1,11 @@
-using System;
+// using System;
 using System.Collections.Generic;
 namespace StarWarsConquest;
 
 class Starbase: WeaponsPlatform
 {
     private float repairRate;
-    public Starbase(int cost, float maxHealth, float maxShields, List<Weapon> weapons, float repairRate): base(cost, maxHealth, maxShields, weapons)
+    public Starbase(string type, int cost, float maxHealth, float maxShields, List<Weapon> weapons, float repairRate): base(type, type, cost, maxHealth, maxShields, weapons)
     {
         this.repairRate = repairRate;
     }

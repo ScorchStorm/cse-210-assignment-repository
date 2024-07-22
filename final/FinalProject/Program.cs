@@ -3,41 +3,41 @@ class Program
 {
     static void Main(string[] args)
     {
-        GalacticMap galacticMap = new GalacticMap();
-        galacticMap.DisplayGalacticMap();
+        // GalacticMap galacticMap = new GalacticMap();
+        // galacticMap.DisplayGalacticMap();
         // SimpleGame.GameForm simplegame = new SimpleGame.GameForm();
-        // Animation.GameForm animation = new Animation.GameForm();
+        Animation.GameForm animation = new Animation.GameForm();
         
-        // int xDis = 140;
-        // int yDis = 70;
-        // int size = 150;
-        // int xOffset1 = 50;
-        // int yOffset1 = 100;
-        // int xOffset2 = xDis+50+xOffset1;
-        // int yOffset2 = -yDis-25+yOffset1;
-        // string calamariDreadnaughtImage = "C:\\Users\\Matthew\\OneDrive\\Documents\\BYU-I Spring Semester 2024 Files\\Programming with Classes (CSE 210)\\cse-210-assignment-repository\\final\\FinalProject\\images\\Rebel Alliance - Home One.png";
-        // animation.AddPicture(calamariDreadnaughtImage, 3*xDis+xOffset2, 3*yDis+yOffset2, size);
-        // animation.AddPicture(calamariDreadnaughtImage, 4*xDis+xOffset2, 4*yDis+yOffset2, size);
-        // animation.AddPicture(calamariDreadnaughtImage, 5*xDis+xOffset2, 5*yDis+yOffset2, size);
-        // animation.AddPicture(calamariDreadnaughtImage, 6*xDis+xOffset2, 6*yDis+yOffset2, size);
-        // animation.AddPicture(calamariDreadnaughtImage, 4*xDis+xOffset2, 2*yDis+yOffset2, size);
-        // animation.AddPicture(calamariDreadnaughtImage, 5*xDis+xOffset2, 3*yDis+yOffset2, size);
-        // animation.AddPicture(calamariDreadnaughtImage, 6*xDis+xOffset2, 4*yDis+yOffset2, size);
+        int xDis = 140;
+        int yDis = 70;
+        int size = 150;
+        int xOffset1 = 50;
+        int yOffset1 = 100;
+        int xOffset2 = xDis+50+xOffset1;
+        int yOffset2 = -yDis-25+yOffset1;
+        string calamariDreadnaughtImage = "C:\\Users\\Matthew\\OneDrive\\Documents\\BYU-I Spring Semester 2024 Files\\Programming with Classes (CSE 210)\\cse-210-assignment-repository\\final\\FinalProject\\images\\Rebel Alliance - Home One.png";
+        animation.AddPicture(calamariDreadnaughtImage, 3*xDis+xOffset2, 3*yDis+yOffset2, size);
+        animation.AddPicture(calamariDreadnaughtImage, 4*xDis+xOffset2, 4*yDis+yOffset2, size);
+        animation.AddPicture(calamariDreadnaughtImage, 5*xDis+xOffset2, 5*yDis+yOffset2, size);
+        animation.AddPicture(calamariDreadnaughtImage, 6*xDis+xOffset2, 6*yDis+yOffset2, size);
+        animation.AddPicture(calamariDreadnaughtImage, 4*xDis+xOffset2, 2*yDis+yOffset2, size);
+        animation.AddPicture(calamariDreadnaughtImage, 5*xDis+xOffset2, 3*yDis+yOffset2, size);
+        animation.AddPicture(calamariDreadnaughtImage, 6*xDis+xOffset2, 4*yDis+yOffset2, size);
 
-        // string sithDreadnaughtImage = "C:\\Users\\Matthew\\OneDrive\\Documents\\BYU-I Spring Semester 2024 Files\\Programming with Classes (CSE 210)\\cse-210-assignment-repository\\final\\FinalProject\\images\\Reconstituted Sith Empire - Harrower Class Star Destroyer.png";
-        // // animation.AddPicture(sithDreadnaughtImage, 3*xDis+xOffset1, 2*yDis+yOffset1, size);
-        // // animation.AddPicture(sithDreadnaughtImage, 4*xDis+xOffset1, 3*yDis+yOffset1, size);
-        // // animation.AddPicture(sithDreadnaughtImage, 5*xDis+xOffset1, 4*yDis+yOffset1, size);
-        // // animation.AddPicture(sithDreadnaughtImage, 6*xDis+xOffset1, 5*yDis+yOffset1, size);
-        // // animation.AddPicture(sithDreadnaughtImage, 3*xDis+xOffset1, 4*yDis+yOffset1, size);
-        // // animation.AddPicture(sithDreadnaughtImage, 4*xDis+xOffset1, 5*yDis+yOffset1, size);
-        // // animation.AddPicture(sithDreadnaughtImage, 5*xDis+xOffset1, 6*yDis+yOffset1, size);
+        string sithDreadnaughtImage = "C:\\Users\\Matthew\\OneDrive\\Documents\\BYU-I Spring Semester 2024 Files\\Programming with Classes (CSE 210)\\cse-210-assignment-repository\\final\\FinalProject\\images\\Reconstituted Sith Empire - Harrower Class SD.png";
+        animation.AddPicture(sithDreadnaughtImage, 3*xDis+xOffset1, 2*yDis+yOffset1, size);
+        animation.AddPicture(sithDreadnaughtImage, 4*xDis+xOffset1, 3*yDis+yOffset1, size);
+        animation.AddPicture(sithDreadnaughtImage, 5*xDis+xOffset1, 4*yDis+yOffset1, size);
+        animation.AddPicture(sithDreadnaughtImage, 6*xDis+xOffset1, 5*yDis+yOffset1, size);
+        animation.AddPicture(sithDreadnaughtImage, 3*xDis+xOffset1, 4*yDis+yOffset1, size);
+        animation.AddPicture(sithDreadnaughtImage, 4*xDis+xOffset1, 5*yDis+yOffset1, size);
+        animation.AddPicture(sithDreadnaughtImage, 5*xDis+xOffset1, 6*yDis+yOffset1, size);
 
         // animation.AddPicture(sithDreadnaughtImage, 100, 100, 200);
         // animation.AddPicture(sithDreadnaughtImage, 100, 150, 200);
         // animation.AddPicture(sithDreadnaughtImage, 100, 200, 200);
         // animation.AddPicture(sithDreadnaughtImage, 100, 250, 200);
-        // animation.ShowDialog();
+        animation.ShowDialog();
         // Console.WriteLine("We got here");
 
         // // animation.AddMovingPicture(sithDreadnaughtImage, 0, 0, 100);

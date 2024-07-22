@@ -3,7 +3,7 @@ namespace StarWarsConquest;
 class MiningStation: Platform
 {
     private float miningEfficiency;
-    public MiningStation(int cost, float maxHealth, float maxShields, float miningEfficiency): base(cost, maxHealth, maxShields)
+    public MiningStation(int cost, float maxHealth, float maxShields, float miningEfficiency): base("Mining Station", "Mining Station", cost, maxHealth, maxShields)
     {
         this.miningEfficiency = miningEfficiency;
     }

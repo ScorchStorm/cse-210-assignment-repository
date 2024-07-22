@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 namespace StarWarsConquest;
 
 class Faction
@@ -28,8 +30,6 @@ class Faction
     private float cost;
     private float repairRate;
     private float rechargeRate;
-    private float shipHealth;
-    private float stationHealth;
 
     // public Faction(int credits, StarSystem capital, List<string> researchOptions, List<Admiral> admirals, float researchEfficiency, float miningEfficiency, float industry, float facilities, float maneuvering, float weaponStrength, float shieldStrength, float cost, float repairRate, float shipHealth, float stationHealth)
     public Faction(string name, int credits, StarSystem capital, List<Admiral> admirals, List<string> researchOptions, float miningEfficiency, float industry, float facilities, float stationHealth, float maneuvering, float weaponStrength, float shieldStrength, float shipHealth, float cost, float researchEfficiency, float repairRate, string scoutClassName, string cruiserClassName, string dreadnaughtClassName)
@@ -74,11 +74,11 @@ class Faction
         // int baseAdvancedStarbaseShields = 800;
         // float baseAdvancedStarbaseWeapons = (float)8.0;
 
-        scout = new Ship((int)(10*cost), (int)(100*shipHealth), (int)(100*shieldStrength), GetWeapons(1), 4, scoutClassName);
-        cruiser = new Ship((int)(20*cost), (int)(200*shipHealth), (int)(200*shieldStrength), GetWeapons(2), 2, cruiserClassName);
-        dreadnaught = new Ship((int)(50*cost), (int)(400*shipHealth), (int)(400*shieldStrength), GetWeapons(4), (float)1.5, dreadnaughtClassName);
-        starbase = new Starbase((int)(50*cost), (int)(400*stationHealth), (int)(400*shieldStrength), GetWeapons(4), (float)(repairRate*0.40));
-        advancedStarbase = new Starbase((int)(100*cost), (int)(800*stationHealth), (int)(800*shieldStrength), GetWeapons(8), (float)(repairRate*0.60));
+        scout = new Ship("Scout", scoutClassName, (int)(10*cost), (int)(100*shipHealth), (int)(100*shieldStrength), GetWeapons(1), 4);
+        cruiser = new Ship("Cruser", cruiserClassName, (int)(20*cost), (int)(200*shipHealth), (int)(200*shieldStrength), GetWeapons(2), 2);
+        dreadnaught = new Ship("Dreadnaught", dreadnaughtClassName, (int)(50*cost), (int)(400*shipHealth), (int)(400*shieldStrength), GetWeapons(4), (float)1.5);
+        starbase = new Starbase("Starbase", (int)(50*cost), (int)(400*stationHealth), (int)(400*shieldStrength), GetWeapons(4), (float)(repairRate*0.40));
+        advancedStarbase = new Starbase("Advanced Starbase", (int)(100*cost), (int)(800*stationHealth), (int)(800*shieldStrength), GetWeapons(8), (float)(repairRate*0.60));
         turret = new Turret((int)(5*cost), (int)(100*shipHealth), (int)(100*shieldStrength), GetWeapons((float)0.5));
         miningStation = new MiningStation((int)(20*cost), (int)(200*stationHealth), (int)(200*shieldStrength), miningEfficiency);
         researchStation = new ResearchStation((int)(20*cost), (int)(200*stationHealth), (int)(200*shieldStrength), researchEfficiency);
@@ -109,13 +109,13 @@ class Faction
         {
             fleet.CreateNewShip(CreateNewShip(newShip));
             credits -= shipCost;
-            Console.WriteLine($"{newShip.GetName()} has been built for {shipCost} credits. You now have {credits} credits");
+            Console.WriteLine($"{newShip.GetClassName()} has been built for {shipCost} credits. You now have {credits} credits");
         }
     }
 
     private Ship CreateNewShip(Ship ship)
     {
-        return new Ship(ship.GetCost(), ship.GetHealth(), ship.GetShields(), ship.GetWeapons(), ship.GetEvasion(), ship.GetName());
+        return new Ship(ship.GetClassType(), ship.GetClassName(), ship.GetCost(), ship.GetHealth(), ship.GetShields(), ship.GetWeapons(), ship.GetEvasion());
     }
 
     private void AddNewStarbase(StarSystem starSystem, Starbase starbase)
@@ -130,7 +130,7 @@ class Faction
 
     private Starbase CreateNewStarbase(Starbase starbase)
     {
-        return new Starbase(starbase.GetCost(), starbase.GetHealth(), starbase.GetShields(), starbase.GetWeapons(), starbase.GetRepairRate());
+        return new Starbase(starbase.GetClassType(), starbase.GetCost(), starbase.GetHealth(), starbase.GetShields(), starbase.GetWeapons(), starbase.GetRepairRate());
     }
 
     private void AddNewTurrets(StarSystem starSystem)
@@ -210,7 +210,6 @@ class Faction
         {
             researchProgress += system.GetResearch(researchEfficiency);
         }
-
     }
 
     public void ChooseResearch()
@@ -237,5 +236,33 @@ class Faction
     public void MoveFleet(Fleet fleet, StarSystem newSystem)
     {
         fleet.Move(newSystem);
+    }
+
+    public void UpgardeFleetHealth(float increase, Ship shipType)
+    {
+        foreach (Fleet fleet in fleets)
+        {
+            foreach (Ship ship in fleet.GetShips())
+            {
+                if (shipType.GetClassName() == ship.GetClassName())
+                {
+                    ship.SetMaxHealth((int)(increase*shipType.GetHealth()));
+                }
+            }
+        }
+    }
+    
+    public void UpgardeStationHealth(float increase, Platform stationType)
+    {
+        foreach (StarSystem system in systems)
+        {
+            foreach (Platform station in system.GetStations())
+            {
+                if (station.GetClassName() == station.GetClassName())
+                {
+                    station.SetMaxHealth((int)(increase*stationType.GetHealth()));
+                }
+            }
+        }
     }
 }

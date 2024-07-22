@@ -4,7 +4,8 @@ using System.Threading;
 
 namespace StarWarsConquest;
 
-class StarSystem: Sprite
+// class StarSystem: Sprite
+class StarSystem
 {
     private string name;
     private List<Platform> stations = new List<Platform>();
@@ -14,20 +15,23 @@ class StarSystem: Sprite
     private int strategicValue;
     private List<StarSystem> hyperlanes = new List<StarSystem>();
     private string description;
-    private int positionX;
-    private int positionY;
+    private int xPosition;
+    private int yPosition;
     // private string textureName = "C:\\Users\\Matthew\\OneDrive\\Documents\\BYU-I Spring Semester 2024 Files\\Programming with Classes (CSE 210)\\cse-210-assignment-repository\\final\\FinalProject\\images\\Sphere-with-blender.png";
     // private Vector2 position;
-    private float scale;
+    // private float scale = 1;
+    private string textureName;
     // private int scale = 40;
     
-    public StarSystem(string name, int strategicValue, int positionX, int positionY, string textureName, string description): base(textureName, positionX, positionY, 40)
+    // public StarSystem(string name, int strategicValue, int positionX, int positionY, string textureName, string description): base(textureName, positionX, positionY, 40)
+    public StarSystem(string name, int strategicValue, int xPosition, int yPosition, string textureName, string description)
     {
         this.name = name;
         this.strategicValue = strategicValue;
-        this.positionX = positionX;
-        this.positionY = positionY;
+        this.xPosition = xPosition;
+        this.yPosition = yPosition;
         this.description = description;
+        this.textureName = textureName;
     }
 
     public void RemoveStation(Platform station)
@@ -146,6 +150,11 @@ class StarSystem: Sprite
         return strength;
     }
 
+    public List<Platform> GetStations()
+    {
+        return stations;
+    }
+
     public List<WeaponsPlatform> GetArmedStations()
     {
         List<WeaponsPlatform> armedStations = new List<WeaponsPlatform>();
@@ -157,5 +166,25 @@ class StarSystem: Sprite
             }
         }
         return armedStations;
+    }
+
+    public int GetXPosition()
+    {
+        return xPosition;
+    }
+    
+    public int GetYPosition()
+    {
+        return yPosition;
+    }
+    
+    public string GetTextureName()
+    {
+        return textureName;
+    }
+
+    public string GetName()
+    {
+        return name;
     }
 }

@@ -1,21 +1,36 @@
 using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Graphics;
 namespace StarWarsConquest;
 
-class Platform
+class Platform: Sprite
 {
-    private int cost;
+    protected string type;
+    protected string className;
+    protected int cost;
     protected float maxHealth;
     protected float health;
     protected float maxShields;
     protected float shields;
-    public Platform(int cost, float maxHealth, float maxShields)
+    public Platform(Texture2D texture, int scale, string type, string className, int cost, float maxHealth, float maxShields): base(texture, scale)
     {
+        this.type = type;
+        this.className = className;
         this.cost = cost;
         this.maxHealth = maxHealth;
         health = maxHealth;
         this.maxShields = maxShields;
         shields = maxShields;
+    }
+
+    public string GetClassName()
+    {
+        return className;
+    }
+
+    public string GetClassType()
+    {
+        return type;
     }
 
     public int GetCost()

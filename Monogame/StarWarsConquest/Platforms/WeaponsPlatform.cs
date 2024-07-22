@@ -1,4 +1,4 @@
-using System;
+// using System;
 using System.Collections.Generic;
 namespace StarWarsConquest;
 
@@ -6,11 +6,11 @@ class WeaponsPlatform: Platform
 {
     protected List<Weapon> weapons = new List<Weapon>();
     // protected float RechargeRate;
-    public WeaponsPlatform(int cost, float maxHealth, float maxShields, List<Weapon> weapons): base(cost, maxHealth, maxShields)
+    public WeaponsPlatform(Texture2D texture, int scale, string type, string className, int cost, float maxHealth, float maxShields, List<Weapon> weapons): base(texture, scale, type, className, cost, maxHealth, maxShields)
     {
         this.weapons = weapons;
     }
-    public WeaponsPlatform(int cost, float maxHealth, float maxShields, Weapon weapon): base(cost, maxHealth, maxShields)
+    public WeaponsPlatform(string type, string className, int cost, float maxHealth, float maxShields, Weapon weapon): base(type, className, cost, maxHealth, maxShields)
     {
         weapons = new List<Weapon>{weapon};
     }

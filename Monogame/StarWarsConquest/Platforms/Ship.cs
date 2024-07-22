@@ -5,12 +5,10 @@ namespace StarWarsConquest;
 
 class Ship: WeaponsPlatform
 {
-    private string className;
     private float evasion;
-    public Ship(int cost, float maxHealth, float maxShields, List<Weapon> weapons, float evasion, string className): base(cost, maxHealth, maxShields, weapons)
+    public Ship(string type, string className, int cost, float maxHealth, float maxShields, List<Weapon> weapons, float evasion): base(type, className, cost, maxHealth, maxShields, weapons)
     {
         this.evasion = evasion;
-        this.className = className;
     }
 
     // public override float GetStrength()
@@ -24,10 +22,25 @@ class Ship: WeaponsPlatform
         Console.WriteLine($"name: {className}, shields: {shields}/{maxShields}, health: {health}/{maxHealth}");
     }
 
-    public string GetName()
-    {
-        return className;
-    }
+    // public float getHealth()
+    // {
+    //     return health;
+    // }
+
+    // public float getShields()
+    // {
+    //     return shields;
+    // }
+
+    // public float getMaxHealth()
+    // {
+    //     return maxHealth;
+    // }
+
+    // public float getMaxShields()
+    // {
+    //     return maxShields;
+    // }
 
     public float GetEvasion()
     {
