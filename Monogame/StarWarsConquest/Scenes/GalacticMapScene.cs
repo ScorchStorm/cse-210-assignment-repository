@@ -263,7 +263,7 @@ class GalacticMapScene : IScene
             {
                 Texture2D texture = fleet.GetFleetImage();
                 Vector2 position = fleet.GetPosition();
-                float scale = 1;
+                float scale = 0.1f;
                 Sprite fleetSprite = new Sprite(texture, position, scale);
                 fleetSprite.Draw(spriteBatch);
             }

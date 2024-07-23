@@ -31,14 +31,14 @@ class Faction
     private float cost;
     private float repairRate;
     private float rechargeRate;
-    private float scoutScale = 0.02f;
-    private float cruiserScale = 0.03f;
-    private float dreadnaughtScale = 0.04f;
-    private float starbaseScale = 0.06f;
-    private float advancedStarbaseScale = 0.07f;
-    private float turretScale = 0.03f;
-    private float miningStationScale = 0.04f;
-    private float researchStationScale = 0.04f;
+    private float scoutScale = 0.2f;
+    private float cruiserScale = 0.3f;
+    private float dreadnaughtScale = 0.4f;
+    private float starbaseScale = 0.6f;
+    private float advancedStarbaseScale = 0.7f;
+    private float turretScale = 0.3f;
+    private float miningStationScale = 0.4f;
+    private float researchStationScale = 0.4f;
 
     // public Faction(int credits, StarSystem capital, List<string> researchOptions, List<Admiral> admirals, float researchEfficiency, float miningEfficiency, float industry, float facilities, float maneuvering, float weaponStrength, float shieldStrength, float cost, float repairRate, float shipHealth, float stationHealth)
     // public Faction(string name, int credits, StarSystem capital, List<Admiral> admirals, List<string> researchOptions, float miningEfficiency, float industry, float facilities, float stationHealth, float maneuvering, float weaponStrength, float shieldStrength, float shipHealth, float cost, float researchEfficiency, float repairRate, string scoutClassName, Texture2D scoutTexture, string cruiserClassName, Texture2D cruiserTexture, string dreadnaughtClassName, Texture2D dreadnaughtTexture, string advancedStarbaseName, Texture2D advancedStarbaseTexture, Texture2D starbaseTexture, Texture2D turretTexture, Texture2D miningStationTexture, Texture2D researchStationTexture, Texture2D insigniaTexture)
@@ -273,9 +273,24 @@ class Faction
         return capital;
     }
 
+    public int GetCredits()
+    {
+        return credits;
+    }
+
+    public List<StarSystem> GetSystems()
+    {
+        return systems;
+    }
+
     public void MoveFleet(Fleet fleet, StarSystem newSystem)
     {
         fleet.Move(newSystem);
+    }
+
+    public void AddNewSystem(StarSystem system)
+    {
+        systems.Add(system);
     }
 
     public void UpgardeFleetHealth(float increase, Ship shipType)

@@ -22,7 +22,7 @@ class StarSystem: Sprite
     
     // public StarSystem(string name, int strategicValue, int positionX, int positionY, string textureName, string description): base(textureName, positionX, positionY, 40)
     // public StarSystem(string name, int strategicValue, int xPosition, int yPosition, string textureName, string description)
-    public StarSystem(Texture2D texture, Vector2 position, string name, int strategicValue, string description): base(texture, position, 1f)
+    public StarSystem(Texture2D texture, Vector2 position, string name, int strategicValue, string description): base(texture, position/5, 0.1f)
     {
         this.name = name;
         this.strategicValue = strategicValue;
@@ -151,6 +151,28 @@ class StarSystem: Sprite
     public List<Platform> GetStations()
     {
         return stations;
+    }
+
+    public List<StarSystem> HyperLanes()
+    {
+        return hyperlanes;
+    }
+
+    public List<string> GetPlatformNames()
+    {
+        List<string> platformNames = new List<string>();
+        foreach (Platform station in stations)
+        {
+            platformNames.Add(station.GetClassName());
+        }
+        if (fleet != null)
+        {
+            foreach (Ship ship in fleet.GetShips())
+            {
+                platformNames.Add(ship.GetClassName());
+            }
+        }
+        return platformNames;
     }
 
     public List<WeaponsPlatform> GetArmedStations()

@@ -18,18 +18,20 @@ public class GameManager
     private ContentManager contentManager;
     private GalacticMapScene galacticMapScene;
     private Dictionary<string,Texture2D> textureDict;
+    private Faction playerFaction;
     
     // public GameManager(GraphicsDeviceManager graphics)
     // {
     //     this.graphics = graphics;
     //     sceneManager = new();
-    //     TextureManager textureManager = new TextureManager(contentManager);
+    //     TextureManager textureManager = new TextureManager(contentManager, graphics);
     //     textureDict = textureManager.GetTextureDict();
     //     GalacticMapScene galacticMapScene = new GalacticMapScene(contentManager, graphics, sceneManager, textureDict);
     //     FactionManager factionManager = new FactionManager(systemDictionary, textureDict);
     //     factions = factionManager.GetFactions();
     //     factionManager.BuildTestFleets();
     //     galacticMapScene.SetFactions(factions);
+    //     Initialize();
     // }
     // public void Initialize()
     // {
@@ -50,7 +52,7 @@ public class GameManager
         sceneManager = new();
     }
 
-    public void initialize()
+    public void Initialize()
     {
 
     }
@@ -64,18 +66,27 @@ public class GameManager
         FactionManager factionManager = new FactionManager(systemDictionary, textureDict);
         factions = factionManager.GetFactions();
         galacticMapScene.SetFactions(factions);
-        // List<Faction> factionsAgain = galacticMapScene.GetFactions();
-        // galacticMapScene.TestList();
         factionManager.BuildTestFleets();
         PrintFleets();
-        // List<Faction> factionsAgain = galacticMapScene.GetFactions();
-        // sceneManager.AddScene(new GalacticMapScene(contentManager, graphics, sceneManager, textureDict));
-        // List<Faction> factionsAgain = galacticMapScene.GetFactions();
         sceneManager.AddScene(galacticMapScene);
-        
         sceneManager.GetCurrentScene().Load();
+        ChooseFaction();
     }
 
+    public void ChooseFaction()
+    {
+        Console.WriteLine("Welcome to Star Wars Conquest!");
+        Console.WriteLine();
+        List<string> factionNames = new List<string>();
+        foreach(Faction faction in factions)
+        {
+            factionNames.Add(faction.GetFactionName());
+        }
+        Choice choice = new Choice("Please select the faction you would like to play as", factionNames);
+        int index = choice.MakeChoice();
+        playerFaction = factions[index];
+        TakeTurn();
+    }
 
     public void PrintFleets()
     {
@@ -89,7 +100,57 @@ public class GameManager
     }
     public void TakeTurn()
     {
-
+        List<string> choices = new List<string>{"Check number of Credits", "Build a New Fleet", "Move a Fleet", "View a System"};
+        Choice choice = new Choice("It is your turn. What would you like to do?", choices);
+        int index = choice.MakeChoice();
+        if (index == 0)
+        {
+            Console.WriteLine($"You have {playerFaction.GetCredits()} credits");
+        }
+        else if (index == 1)
+        {
+            playerFaction.CreateNewFleet();
+        }
+        else if (index == 2)
+        {
+            List<string> fleetPositions = new List<string>();
+            List<Fleet> playerFleets = playerFaction.GetFleets();
+            foreach (Fleet fleet in playerFleets)
+            {
+                fleetPositions.Add(fleet.GetSystem().GetName());
+            }
+            Choice choice2 = new Choice("You have fleets in the following systems. Which would you like to move?", fleetPositions);
+            int index2 = choice2.MakeChoice();
+            Fleet chosenFleet = playerFleets[index2];
+            List<string> destinations = new List<string>();
+            foreach (StarSystem system in chosenFleet.GetSystem().GetHyperlanes())
+            {
+                destinations.Add(system.GetName());
+            }
+            Choice choice3 = new Choice("Where would you like to move this fleet?", destinations);
+            int index3 = choice3.MakeChoice();
+            StarSystem destination = chosenFleet.GetSystem().GetHyperlanes()[index3];
+            chosenFleet.Move(destination);
+            Console.WriteLine($"The fleet has been moved to {chosenFleet.GetSystem().GetName()}");
+        }
+        else if (index == 3)
+        {
+            List<string> systemNames = new List<string>();
+            foreach (StarSystem system in playerFaction.GetSystems())
+            {
+                systemNames.Add(system.GetName());
+            }
+            Choice choice4 = new Choice("Which system would you like to view?", systemNames);
+            int index4 = choice4.MakeChoice();
+            StarSystem systemChoice = playerFaction.GetSystems()[index4];
+            systemChoice.DisplayDescription();
+            Console.WriteLine($"The structures in {systemChoice.GetName()} are:");
+            List<string> platformNames = systemChoice.GetPlatformNames();
+            foreach (string name in platformNames)
+            {
+                Console.WriteLine(name);
+            }
+        }
     }
 
     // public void Load(ContentManager contentManager)
@@ -108,6 +169,7 @@ public class GameManager
     public void Update(GameTime gameTime)
     {
         sceneManager.GetCurrentScene().Update(gameTime);
+        TakeTurn();
     }
 
     public void Draw(SpriteBatch spriteBatch)

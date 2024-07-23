@@ -22,8 +22,20 @@ class Game1 : Game
         gameManager = new GameManager(graphics);
     }
 
+    // protected override void Initialize()
+    // {
+    //     base.Initialize();
+    // }
+    
     protected override void Initialize()
     {
+        //Here we can load our initial scene
+        // Point WindowSize = new Point(1366,768);
+        Point WindowSize = new Point(1250,700);
+        graphics.PreferredBackBufferWidth = WindowSize.X;
+        graphics.PreferredBackBufferHeight = WindowSize.Y;
+        graphics.ApplyChanges();
+        gameManager.Initialize();
         base.Initialize();
     }
 

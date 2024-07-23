@@ -62,10 +62,10 @@ namespace StarWarsConquest
             get
             {
                 return new Rectangle(
-                    (int)position.X,
-                    (int)position.Y,
-                    (int)(texture.Width * scale),
-                    (int)(texture.Height * scale)
+                    (int)(position.X-texture.Width*scale/2),
+                    (int)(position.Y-texture.Height*scale/2),
+                    (int)(texture.Width*scale),
+                    (int)(texture.Height*scale)
                 );
             }
         }

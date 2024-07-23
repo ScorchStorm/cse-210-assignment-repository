@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Graphics;
 namespace StarWarsConquest;
 
 class Fleet
@@ -9,7 +10,8 @@ class Fleet
     private Ship scout;
     private Ship cruiser;
     private Ship dreadnaught;
-    private StarSystem position;
+    private StarSystem starSystem;
+    private Vector2 position;
     private Faction faction;
     private int movementsRemaining;
     public Fleet(Admiral admiral, Ship scout, Ship cruiser, Ship dreadnaught, Faction faction)
@@ -18,8 +20,10 @@ class Fleet
         this.scout = scout;
         this.cruiser = cruiser;
         this.dreadnaught = dreadnaught;
+        this.faction = faction;
         ships.Add(cruiser);
-        position = faction.GetCapital();
+        starSystem = faction.GetCapital();
+        position = starSystem.GetPosition();
         faction.GetCapital().SetFleet(this);
         movementsRemaining = (int)admiral.GetMovementSpeed();
     }
@@ -58,17 +62,20 @@ class Fleet
 
     public void Move(StarSystem system)
     {
-        // position.SetFleet(null); // I don't know if this is the right way to do this...
-        // position = system;
-        if (system.GetFleet() != null)
-        {
-            system.Battle(this);
-        }
-        if (system.GetFleet == null) // the fleet won the battle (or there was no battle) and moves to the new system
-        {
-            system.SetFleet(this);
-            position = system;
-        }
+        starSystem = system;
+        faction.AddNewSystem(system);
+        // // position.SetFleet(null); // I don't know if this is the right way to do this...
+        // // position = system;
+        // if (system.GetFleet() != null)
+        // {
+        //     system.Battle(this);
+        // }
+        // if (system.GetFleet == null) // the fleet won the battle (or there was no battle) and moves to the new system
+        // {
+        //     system.SetFleet(this);
+        //     starSystem = system;
+        //     position = system.GetPosition();
+        // }
     }
 
     public List<Ship> GetShips()
@@ -116,7 +123,12 @@ class Fleet
 
     public Vector2 GetPosition()
     {
-        return position.GetPosition();
+        return position;
+    }
+
+    public StarSystem GetSystem()
+    {
+        return starSystem;
     }
 
     public Admiral GetAdmiral()
