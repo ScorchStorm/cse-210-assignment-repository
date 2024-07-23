@@ -1,22 +1,26 @@
-﻿using System.Collections.Generic;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
+﻿global using Microsoft.Xna.Framework;
+global using Microsoft.Xna.Framework.Graphics;
+global using Microsoft.Xna.Framework.Input;
+global using Microsoft.Xna.Framework.Content;
+global using System.Collections.Generic;
+
 
 namespace StarWarsConquest;
 
-public class Game1 : Game
+class Game1 : Game
 {
-    SpriteBatch _spriteBatch;
+    SpriteBatch spriteBatch;
     List<Sprite> sprites = new List<Sprite>();
-    private GraphicsDeviceManager _graphics;
-    private SceneManager sceneManager;
+    private GraphicsDeviceManager graphics;
+    // private SceneManager sceneManager;
+    GameManager gameManager;
 
     public Game1()
     {
-        _graphics = new GraphicsDeviceManager(this);
+        graphics = new GraphicsDeviceManager(this);
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
+        gameManager = new GameManager(graphics);
     }
 
     protected override void Initialize()
@@ -54,7 +58,7 @@ public class Game1 : Game
         // private Texture2D ship;
         // private Vector2 position;
         // string pictureName;
-        _spriteBatch = new SpriteBatch(GraphicsDevice);
+        spriteBatch = new SpriteBatch(GraphicsDevice);
         // Texture2D ship = Content.Load<Texture2D>(imageName);
         // TODO: use this.Content to load your game content here
     }
@@ -86,30 +90,30 @@ public class Game1 : Game
         GraphicsDevice.Clear(Color.CornflowerBlue);
 
         // TODO: Add your drawing code here
-        _spriteBatch.Begin(samplerState: SamplerState.PointClamp);
-        // foreach (Sprite sprite in sprites)
-        // {
-        //     sprite.Draw(_spriteBatch);
-        // }
-        sceneManager.GetCurrentScene().Draw(_spriteBatch);
-        _spriteBatch.End();
+        spriteBatch.Begin(samplerState: SamplerState.PointClamp);
+        foreach (Sprite sprite in sprites)
+        {
+            sprite.Draw(spriteBatch);
+        }
+        gameManager.Draw(spriteBatch);
+        spriteBatch.End();
 
         base.Draw(gameTime);
     }
 
-    public void DrawGalaxyMap()
-    {
-        GalacticMap galaxyMap = new GalacticMap();
-        // List<List<StarSystem>> hyperlanes = galaxyMap.GetHyperLanes();
-        List<StarSystem> starSystems = galaxyMap.GetStarSystems();
-        foreach (StarSystem system in starSystems)
-        {
-            int xPosition = system.GetXPosition();
-            int yPosition = system.GetYPosition();
-            string textureName = system.GetTextureName();
-            float scale = 1;
-            AddContent(xPosition, yPosition, textureName, scale, Color.White);
-            // AddSprite(textureName, xPosition, yPosition, scale);
-        }
-    }
+    // public void DrawGalaxyMap()
+    // {
+    //     GalacticMapScene galaxyMap = new GalacticMapScene();
+    //     // List<List<StarSystem>> hyperlanes = galaxyMap.GetHyperLanes();
+    //     List<StarSystem> starSystems = galaxyMap.GetStarSystems();
+    //     foreach (StarSystem system in starSystems)
+    //     {
+    //         int xPosition = system.GetXPosition();
+    //         int yPosition = system.GetYPosition();
+    //         string textureName = system.GetTextureName();
+    //         float scale = 1;
+    //         AddContent(xPosition, yPosition, textureName, scale, Color.White);
+    //         // AddSprite(textureName, xPosition, yPosition, scale);
+    //     }
+    // }
 }

@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace StarWarsConquest;
 
-public class SpriteOld
+class SpriteOld
 {
     private readonly float SCALE;
     public Texture2D texture;

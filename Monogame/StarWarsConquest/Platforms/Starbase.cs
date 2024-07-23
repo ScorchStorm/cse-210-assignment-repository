@@ -1,13 +1,15 @@
 // using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Graphics;
 namespace StarWarsConquest;
 
 class Starbase: WeaponsPlatform
 {
     private float repairRate;
-    public Starbase(string type, int cost, float maxHealth, float maxShields, List<Weapon> weapons, float repairRate): base(type, type, cost, maxHealth, maxShields, weapons)
+    public Starbase(Texture2D texture, float scale, string type, string className, int cost, float maxHealth, float maxShields, List<Weapon> weapons, float repairRate): base(texture, scale, type, className, cost, maxHealth, maxShields, weapons)
     {
         this.repairRate = repairRate;
+        this.className = className;
     }
 
     public float GetRepairRate()

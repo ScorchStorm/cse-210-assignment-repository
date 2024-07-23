@@ -1,18 +1,16 @@
 // using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Graphics;
 namespace StarWarsConquest;
 
 class WeaponsPlatform: Platform
 {
     protected List<Weapon> weapons = new List<Weapon>();
+    
     // protected float RechargeRate;
-    public WeaponsPlatform(Texture2D texture, int scale, string type, string className, int cost, float maxHealth, float maxShields, List<Weapon> weapons): base(texture, scale, type, className, cost, maxHealth, maxShields)
+    public WeaponsPlatform(Texture2D texture, float scale, string type, string className, int cost, float maxHealth, float maxShields, List<Weapon> weapons): base(texture, scale, type, className, cost, maxHealth, maxShields)
     {
         this.weapons = weapons;
-    }
-    public WeaponsPlatform(string type, string className, int cost, float maxHealth, float maxShields, Weapon weapon): base(type, className, cost, maxHealth, maxShields)
-    {
-        weapons = new List<Weapon>{weapon};
     }
 
     public List<Weapon> GetWeapons()

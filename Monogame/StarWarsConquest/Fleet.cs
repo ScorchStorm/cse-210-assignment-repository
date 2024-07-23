@@ -101,8 +101,38 @@ class Fleet
         this.dreadnaught = dreadnaught;
     }
 
+    public Vector2 GetPosition()
+    {
+        return position.GetPosition();
+    }
+
     public Admiral GetAdmiral()
     {
         return admiral;
+    }
+
+    public Texture2D GetFleetImage()
+    {
+        List<string> types = new List<string>();
+        foreach (Ship ship in ships)
+        {
+            types.Add(ship.GetClassType());
+        }
+        if (types.Contains("dreadnaught"))
+        {
+            return dreadnaught.GetTexture();
+        }
+        else if (types.Contains("cruiser"))
+        {
+            return cruiser.GetTexture();
+        }
+        else if (types.Contains("scout"))
+        {
+            return scout.GetTexture();
+        }
+        else
+        {
+            return dreadnaught.GetTexture();
+        }
     }
 }

@@ -12,7 +12,7 @@
 
 // public class Sprite
 // {
-//     private readonly float SCALE;
+//     private readonly float scale;
 //     public Texture2D texture;
 //     public Vector2 position;
 //     public Rectangle Rect
@@ -22,17 +22,17 @@
 //           return new Rectangle(
 //             (int)position.X,
 //             (int)position.Y,
-//             texture.Width * (int)SCALE,
-//             texture.Height * (int)SCALE
+//             texture.Width * (int)scale,
+//             texture.Height * (int)scale
 //           );
 //         }
 //     }
-//     public Sprite(string texturename, int positionX, int positionY, float SCALE)
+//     public Sprite(string texturename, int positionX, int positionY, float scale)
 //     {
 //       texture = new Content.Load<Texture2D>(texturename);
 //       position = new Vector2(positionX, positionY);
 //       // this.position = position;
-//       this.SCALE = SCALE;
+//       this.scale = scale;
 //     }
 
 //     public virtual void Update(GameTime gameTime){}
@@ -50,11 +50,13 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace StarWarsConquest
 {
-    public class Sprite
+    class Sprite
     {
-        private readonly float SCALE;
-        public Texture2D texture;
-        public Vector2 position;
+        private float scale;
+        private Texture2D texture;
+        private Vector2 position;
+        // public Texture2D texture;
+        // public Vector2 position;
         public Rectangle drect
         {
             get
@@ -62,26 +64,47 @@ namespace StarWarsConquest
                 return new Rectangle(
                     (int)position.X,
                     (int)position.Y,
-                    (int)(texture.Width * SCALE),
-                    (int)(texture.Height * SCALE)
+                    (int)(texture.Width * scale),
+                    (int)(texture.Height * scale)
                 );
             }
         }
 
-        public Sprite(int SCALE = 1)
+        public Sprite(float scale = 1)
         {
-            this.SCALE = SCALE;
+            this.scale = scale;
         }
-        public Sprite(Texture2D texture, int SCALE = 1)
+        public Sprite(Texture2D texture, float scale = 1)
         {
             this.texture = texture;
-            this.SCALE = SCALE;
+            this.scale = scale;
         }
-        public Sprite(Texture2D texture, Vector2 position, int SCALE = 1)
+
+        public Sprite(Texture2D texture, Vector2 position, float scale = 1)
         {   
             this.texture = texture;
             this.position = position;
-            this.SCALE = SCALE;
+            this.scale = scale;
+        }
+
+        public float GetScale()
+        {
+            return scale;
+        }
+
+        public Texture2D GetTexture()
+        {
+            return texture;
+        }
+
+        public Vector2 GetPosition()
+        {
+            return position;
+        }
+
+        public void SetPosition(Vector2 position)
+        {
+            this.position = position;
         }
 
         public virtual void Update(GameTime gameTime) {}

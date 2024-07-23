@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 namespace StarWarsConquest;
 
 class Faction
@@ -30,9 +31,18 @@ class Faction
     private float cost;
     private float repairRate;
     private float rechargeRate;
+    private float scoutScale = 0.02f;
+    private float cruiserScale = 0.03f;
+    private float dreadnaughtScale = 0.04f;
+    private float starbaseScale = 0.06f;
+    private float advancedStarbaseScale = 0.07f;
+    private float turretScale = 0.03f;
+    private float miningStationScale = 0.04f;
+    private float researchStationScale = 0.04f;
 
     // public Faction(int credits, StarSystem capital, List<string> researchOptions, List<Admiral> admirals, float researchEfficiency, float miningEfficiency, float industry, float facilities, float maneuvering, float weaponStrength, float shieldStrength, float cost, float repairRate, float shipHealth, float stationHealth)
-    public Faction(string name, int credits, StarSystem capital, List<Admiral> admirals, List<string> researchOptions, float miningEfficiency, float industry, float facilities, float stationHealth, float maneuvering, float weaponStrength, float shieldStrength, float shipHealth, float cost, float researchEfficiency, float repairRate, string scoutClassName, string cruiserClassName, string dreadnaughtClassName)
+    // public Faction(string name, int credits, StarSystem capital, List<Admiral> admirals, List<string> researchOptions, float miningEfficiency, float industry, float facilities, float stationHealth, float maneuvering, float weaponStrength, float shieldStrength, float shipHealth, float cost, float researchEfficiency, float repairRate, string scoutClassName, Texture2D scoutTexture, string cruiserClassName, Texture2D cruiserTexture, string dreadnaughtClassName, Texture2D dreadnaughtTexture, string advancedStarbaseName, Texture2D advancedStarbaseTexture, Texture2D starbaseTexture, Texture2D turretTexture, Texture2D miningStationTexture, Texture2D researchStationTexture, Texture2D insigniaTexture)
+    public Faction(Dictionary<string, Texture2D> textureDict, string name, int credits, StarSystem capital, List<Admiral> admirals, List<string> researchOptions, float miningEfficiency, float industry, float facilities, float stationHealth, float maneuvering, float weaponStrength, float shieldStrength, float shipHealth, float cost, float researchEfficiency, float repairRate, string scoutClassName, string cruiserClassName, string dreadnaughtClassName, string advancedStarbaseName)
     {
         this.name = name;
         this.credits = credits;
@@ -50,7 +60,7 @@ class Faction
         this.shieldStrength = shieldStrength;
         this.cost = cost;
         this.repairRate = repairRate;
-        rechargeRate = (float)1.0;
+        rechargeRate = 1.0f;
         
         // int baseScoutHealth = 100;
         // int baseScoutShields = 100;
@@ -74,14 +84,14 @@ class Faction
         // int baseAdvancedStarbaseShields = 800;
         // float baseAdvancedStarbaseWeapons = (float)8.0;
 
-        scout = new Ship("Scout", scoutClassName, (int)(10*cost), (int)(100*shipHealth), (int)(100*shieldStrength), GetWeapons(1), 4);
-        cruiser = new Ship("Cruser", cruiserClassName, (int)(20*cost), (int)(200*shipHealth), (int)(200*shieldStrength), GetWeapons(2), 2);
-        dreadnaught = new Ship("Dreadnaught", dreadnaughtClassName, (int)(50*cost), (int)(400*shipHealth), (int)(400*shieldStrength), GetWeapons(4), (float)1.5);
-        starbase = new Starbase("Starbase", (int)(50*cost), (int)(400*stationHealth), (int)(400*shieldStrength), GetWeapons(4), (float)(repairRate*0.40));
-        advancedStarbase = new Starbase("Advanced Starbase", (int)(100*cost), (int)(800*stationHealth), (int)(800*shieldStrength), GetWeapons(8), (float)(repairRate*0.60));
-        turret = new Turret((int)(5*cost), (int)(100*shipHealth), (int)(100*shieldStrength), GetWeapons((float)0.5));
-        miningStation = new MiningStation((int)(20*cost), (int)(200*stationHealth), (int)(200*shieldStrength), miningEfficiency);
-        researchStation = new ResearchStation((int)(20*cost), (int)(200*stationHealth), (int)(200*shieldStrength), researchEfficiency);
+        scout = new Ship(textureDict[scoutClassName], scoutScale, "Scout", scoutClassName, (int)(10*cost), (int)(100*shipHealth), (int)(100*shieldStrength), GetWeapons(1), 4);
+        cruiser = new Ship(textureDict[cruiserClassName], cruiserScale, "Cruser", cruiserClassName, (int)(20*cost), (int)(200*shipHealth), (int)(200*shieldStrength), GetWeapons(2), 2);
+        dreadnaught = new Ship(textureDict[dreadnaughtClassName], dreadnaughtScale, "Dreadnaught", dreadnaughtClassName, (int)(50*cost), (int)(400*shipHealth), (int)(400*shieldStrength), GetWeapons(4), 1.5f);
+        starbase = new Starbase(textureDict["Starbase"], starbaseScale, "Starbase", "Golan III Defense Platform", (int)(50*cost), (int)(400*stationHealth), (int)(400*shieldStrength), GetWeapons(4), (float)(repairRate*0.40));
+        advancedStarbase = new Starbase(textureDict[advancedStarbaseName], advancedStarbaseScale, "Advanced Starbase", advancedStarbaseName, (int)(100*cost), (int)(800*stationHealth), (int)(800*shieldStrength), GetWeapons(8), (float)(repairRate*0.60));
+        turret = new Turret(textureDict["XQ1 Platform"], turretScale, (int)(5*cost), (int)(100*shipHealth), (int)(100*shieldStrength), GetWeapons(0.5f));
+        miningStation = new MiningStation(textureDict["Mining Station"], miningStationScale, (int)(20*cost), (int)(200*stationHealth), (int)(200*shieldStrength), miningEfficiency);
+        researchStation = new ResearchStation(textureDict["Research Station"], researchStationScale, (int)(20*cost), (int)(200*stationHealth), (int)(200*shieldStrength), researchEfficiency);
 
         // Weapon sithPrimaryWeapon = new Weapon(basePrimaryWeaponRechargeRate, sithWeaponStrength*basePrimaryWeaponDamage, basePrimaryWeaponTracking, basePrimaryWeaponSpeed);
         // Weapon sithSecondaryWeapon = new Weapon(baseSecondaryWeaponRechargeRate, sithWeaponStrength*baseSecondaryWeaponDamage, baseSecondaryWeaponTracking, baseSecondaryWeaponSpeed);
@@ -92,14 +102,14 @@ class Faction
         // ResearchStation researchStation = ResearchStation();
         // Turret turret = Turret();
         
-        Fleet fleetOne = new Fleet(admirals[0], scout, cruiser, dreadnaught, this);
-        fleets.Add(fleetOne);
-        AddNewShip(fleetOne, dreadnaught);
-        AddNewShip(fleetOne, dreadnaught);
-        AddNewShip(fleetOne, dreadnaught);
-        AddNewShip(fleetOne, dreadnaught);
-        Console.WriteLine("{name} fleet:");
-        fleetOne.PrintShipStats();
+        // Fleet fleetOne = new Fleet(admirals[0], scout, cruiser, dreadnaught, this);
+        // fleets.Add(fleetOne);
+        // AddNewShip(fleetOne, dreadnaught);
+        // AddNewShip(fleetOne, dreadnaught);
+        // AddNewShip(fleetOne, dreadnaught);
+        // AddNewShip(fleetOne, dreadnaught);
+        // Console.WriteLine("{name} fleet:");
+        // fleetOne.PrintShipStats();
     }
 
     public void AddNewShip(Fleet fleet, Ship newShip)
@@ -113,9 +123,29 @@ class Faction
         }
     }
 
-    private Ship CreateNewShip(Ship ship)
+    // private Ship CreateNewShip(Ship ship)
+    // {
+    //     return new Ship(ship.GetTexture(), ship.GetScale(), ship.GetClassType(), ship.GetClassName(), ship.GetCost(), ship.GetHealth(), ship.GetShields(), ship.GetWeapons(), ship.GetEvasion());
+    // }
+
+    public Ship CreateNewShip(Ship ship)
     {
-        return new Ship(ship.GetClassType(), ship.GetClassName(), ship.GetCost(), ship.GetHealth(), ship.GetShields(), ship.GetWeapons(), ship.GetEvasion());
+        return new Ship(ship.GetTexture(), ship.GetScale(), ship.GetClassType(), ship.GetClassName(), ship.GetCost(), ship.GetHealth(), ship.GetShields(), ship.GetWeapons(), ship.GetEvasion());
+    }
+
+    public Ship getDreadnaught()
+    {
+        return dreadnaught;
+    }
+
+    public void CreateNewFleet()
+    {
+        int newFleetCost = 40; // Change this later
+        if (newFleetCost <= credits)
+        {
+            Fleet fleet = new Fleet(admirals[0], scout, cruiser, dreadnaught, this);
+            fleets.Add(fleet);
+        }
     }
 
     private void AddNewStarbase(StarSystem starSystem, Starbase starbase)
@@ -130,7 +160,7 @@ class Faction
 
     private Starbase CreateNewStarbase(Starbase starbase)
     {
-        return new Starbase(starbase.GetClassType(), starbase.GetCost(), starbase.GetHealth(), starbase.GetShields(), starbase.GetWeapons(), starbase.GetRepairRate());
+        return new Starbase(starbase.GetTexture(), starbase.GetScale(), starbase.GetClassType(), starbase.GetClassName(), starbase.GetCost(), starbase.GetHealth(), starbase.GetShields(), starbase.GetWeapons(), starbase.GetRepairRate());
     }
 
     private void AddNewTurrets(StarSystem starSystem)
@@ -147,7 +177,7 @@ class Faction
 
     private Turret CreateNewTurret()
     {
-        return new Turret(turret.GetCost(), turret.GetHealth(), turret.GetShields(), turret.GetWeapons());
+        return new Turret(turret.GetTexture(), turret.GetScale(), turret.GetCost(), turret.GetHealth(), turret.GetShields(), turret.GetWeapons());
     }
 
     private void AddNewMiningStation(StarSystem starSystem)
@@ -161,7 +191,7 @@ class Faction
 
     private MiningStation CreateNewMiningStation()
     {
-        return new MiningStation(miningStation.GetCost(), miningStation.GetHealth(), miningStation.GetShields(), miningStation.GetMiningRate());
+        return new MiningStation(miningStation.GetTexture(), miningStation.GetScale(), miningStation.GetCost(), miningStation.GetHealth(), miningStation.GetShields(), miningStation.GetMiningRate());
     }
 
     private void AddNewResearchStation(StarSystem starSystem)
@@ -175,19 +205,19 @@ class Faction
 
     private ResearchStation CreateNewResearchStation()
     {
-        return new ResearchStation(researchStation.GetCost(), researchStation.GetHealth(), researchStation.GetShields(), researchStation.GetResearchRate());
+        return new ResearchStation(researchStation.GetTexture(), researchStation.GetScale(), researchStation.GetCost(), researchStation.GetHealth(), researchStation.GetShields(), researchStation.GetResearchRate());
     }
 
     public List<Weapon> GetWeapons(float rechargeModifier)
     {
-        int basePrimaryWeaponDamage = 50;
-        float basePrimaryWeaponRechargeRate = (float)0.2;
-        float basePrimaryWeaponSpeed = (float)4.0;
-        float basePrimaryWeaponTracking = (float)1.0;
-        int baseSecondaryWeaponDamage = 50;
-        float baseSecondaryWeaponRechargeRate = (float)0.4;
-        float baseSecondaryWeaponSpeed = (float)1.0;
-        float baseSecondaryWeaponTracking = (float)3.0;
+        float basePrimaryWeaponDamage = 50;
+        float basePrimaryWeaponRechargeRate = 0.2f;
+        float basePrimaryWeaponSpeed = 4.0f;
+        float basePrimaryWeaponTracking = 1.0f;
+        float baseSecondaryWeaponDamage = 50;
+        float baseSecondaryWeaponRechargeRate = 0.4f;
+        float baseSecondaryWeaponSpeed = 1.0f;
+        float baseSecondaryWeaponTracking = 3.0f;
         Weapon primaryWeapon = new Weapon(rechargeModifier*basePrimaryWeaponRechargeRate*rechargeRate, basePrimaryWeaponDamage*weaponStrength, basePrimaryWeaponTracking, basePrimaryWeaponSpeed);
         Weapon secondaryWeapon = new Weapon(rechargeModifier*baseSecondaryWeaponRechargeRate*rechargeRate, baseSecondaryWeaponDamage*weaponStrength, baseSecondaryWeaponTracking, baseSecondaryWeaponSpeed);
         List<Weapon> weapons = new List<Weapon>{primaryWeapon, secondaryWeapon};
@@ -225,6 +255,11 @@ class Faction
     public Fleet GetFleet(int index)
     {
         return fleets[index];
+    }
+
+    public List<Fleet> GetFleets()
+    {
+        return fleets;
     }
 
 

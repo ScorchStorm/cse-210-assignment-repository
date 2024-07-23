@@ -5,7 +5,7 @@ using System.Threading;
 namespace StarWarsConquest;
 
 // class StarSystem: Sprite
-class StarSystem
+class StarSystem: Sprite
 {
     private string name;
     private List<Platform> stations = new List<Platform>();
@@ -15,23 +15,21 @@ class StarSystem
     private int strategicValue;
     private List<StarSystem> hyperlanes = new List<StarSystem>();
     private string description;
-    private int xPosition;
-    private int yPosition;
-    // private string textureName = "C:\\Users\\Matthew\\OneDrive\\Documents\\BYU-I Spring Semester 2024 Files\\Programming with Classes (CSE 210)\\cse-210-assignment-repository\\final\\FinalProject\\images\\Sphere-with-blender.png";
-    // private Vector2 position;
-    // private float scale = 1;
-    private string textureName;
-    // private int scale = 40;
+    // private float scale = 1f;
+    // // private string textureName = "C:\\Users\\Matthew\\OneDrive\\Documents\\BYU-I Spring Semester 2024 Files\\Programming with Classes (CSE 210)\\cse-210-assignment-repository\\final\\FinalProject\\images\\Sphere-with-blender.png";
+    // // private Vector2 position;
+    // // private int scale = 40;
     
     // public StarSystem(string name, int strategicValue, int positionX, int positionY, string textureName, string description): base(textureName, positionX, positionY, 40)
-    public StarSystem(string name, int strategicValue, int xPosition, int yPosition, string textureName, string description)
+    // public StarSystem(string name, int strategicValue, int xPosition, int yPosition, string textureName, string description)
+    public StarSystem(Texture2D texture, Vector2 position, string name, int strategicValue, string description): base(texture, position, 1f)
     {
         this.name = name;
         this.strategicValue = strategicValue;
-        this.xPosition = xPosition;
-        this.yPosition = yPosition;
+        // this.xPosition = xPosition;
+        // this.yPosition = yPosition;
         this.description = description;
-        this.textureName = textureName;
+        // this.textureName = textureName;
     }
 
     public void RemoveStation(Platform station)
@@ -168,20 +166,20 @@ class StarSystem
         return armedStations;
     }
 
-    public int GetXPosition()
-    {
-        return xPosition;
-    }
+    // public int GetXPosition()
+    // {
+    //     return xPosition;
+    // }
     
-    public int GetYPosition()
-    {
-        return yPosition;
-    }
+    // public int GetYPosition()
+    // {
+    //     return yPosition;
+    // }
     
-    public string GetTextureName()
-    {
-        return textureName;
-    }
+    // public string GetTextureName()
+    // {
+    //     return textureName;
+    // }
 
     public string GetName()
     {

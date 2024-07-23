@@ -12,7 +12,7 @@ class Platform: Sprite
     protected float health;
     protected float maxShields;
     protected float shields;
-    public Platform(Texture2D texture, int scale, string type, string className, int cost, float maxHealth, float maxShields): base(texture, scale)
+    public Platform(Texture2D texture, float scale, string type, string className, int cost, float maxHealth, float maxShields): base(texture, scale)
     {
         this.type = type;
         this.className = className;

@@ -1,12 +1,13 @@
 // using System.Runtime.CompilerServices;
 using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Graphics;
 namespace StarWarsConquest;
 
 class Ship: WeaponsPlatform
 {
     private float evasion;
-    public Ship(string type, string className, int cost, float maxHealth, float maxShields, List<Weapon> weapons, float evasion): base(type, className, cost, maxHealth, maxShields, weapons)
+    public Ship(Texture2D texture, float scale, string type, string className, int cost, float maxHealth, float maxShields, List<Weapon> weapons, float evasion): base(texture, scale, type, className, cost, maxHealth, maxShields, weapons)
     {
         this.evasion = evasion;
     }

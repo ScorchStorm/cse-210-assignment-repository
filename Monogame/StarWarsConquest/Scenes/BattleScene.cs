@@ -1,14 +1,15 @@
 using System;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace StarWarsConquest;
 
-public class BattleScene : IScene
+class BattleScene : IScene
 {
     ContentManager contentManager;
     GraphicsDeviceManager graphicsDeviceManager;
     SceneManager sceneManager;
-    private readonly List<Vector2> enemyFleetPositions = new()
+    private readonly List<Vector2> attackingFleetPositions = new()
     {
         new Vector2(710,274),
         new Vector2(896,211),
@@ -18,7 +19,7 @@ public class BattleScene : IScene
         new Vector2(1125,303),
         new Vector2(1043,441)
     };
-    private readonly List<Vector2> playerFleetPositions = new()
+    private readonly List<Vector2> defendingFleetPositions = new()
     {
         new Vector2(530,300),
         new Vector2(505,421),
@@ -29,17 +30,16 @@ public class BattleScene : IScene
         new Vector2(911,465)
     };
     private readonly List<Vector2> stationPositions = new();
-    private readonly List<Vector2> turretPositions = new();
-    public List<Ship> playerFleet;
-    public List<Ship> enemyFleet;
-    public List<Station> stations;
+    private List<Ship> defendingShips;
+    private List<Ship> attackingShips;
+    private List<Platform> stations;
 
 
-    public BattleScene(List<Ship> friendlyShips, List<Ship> enemyShips,List<Station> stations, ContentManager contentManager, GraphicsDeviceManager graphicsDeviceManager, SceneManager sceneManager)
+    public BattleScene(Fleet defendingFleet, Fleet attackingFleet, List<Platform> stations, ContentManager contentManager, GraphicsDeviceManager graphicsDeviceManager, SceneManager sceneManager)
     {
         //This sets up our scene to use the information from the base game
-        this.playerFleet = friendlyShips;
-        this.enemyFleet = enemyShips;
+        defendingShips = defendingFleet.GetShips();
+        attackingShips = attackingFleet.GetShips();
         this.stations = stations;
         this.contentManager = contentManager;
         this.graphicsDeviceManager = graphicsDeviceManager;
@@ -49,26 +49,26 @@ public class BattleScene : IScene
     {
         int idx = 0;
         //This might not be needed if the texture is already assigned elsewhere, but position will stay
-        foreach (Ship ship in playerFleet)
+        foreach (Ship ship in defendingShips)
         {
-            ship.texture = TextureManager.GetTexture(ship.GetShipName(),contentManager);
-            ship.position = playerFleetPositions[idx];
+            // ship.texture = TextureManager.GetTexture(ship.GetClassName(),contentManager);
+            ship.SetPosition(defendingFleetPositions[idx]);
             idx++;
         }
         idx = 0;
 
-        foreach (Ship ship in enemyFleet)
+        foreach (Ship ship in attackingShips)
         {
-            ship.texture = TextureManager.GetTexture(ship.GetShipName(),contentManager);
-            ship.position = enemyFleetPositions[idx];
+            // ship.texture = TextureManager.GetTexture(ship.GetClassName(),contentManager);
+            ship.SetPosition(attackingFleetPositions[idx]);
             idx++;
         }
         idx = 0;
 
-        foreach (Station station in stations)
+        foreach (Platform station in stations)
         {
-            station.texture = TextureManager.GetTexture(station.GetName(),contentManager);
-            station.position = stationPositions[idx];
+            // station.texture = TextureManager.GetTexture(station.GetClassName(),contentManager);
+            station.SetPosition(stationPositions[idx]);
             idx++;
         }
     }
@@ -80,15 +80,15 @@ public class BattleScene : IScene
 
     public void Draw(SpriteBatch spriteBatch)
     {
-        foreach (Ship ship in playerFleet)
+        foreach (Ship ship in defendingShips)
         {
             ship.Draw(spriteBatch);
         }
-        foreach (Ship ship in enemyFleet)
+        foreach (Ship ship in attackingShips)
         {
             ship.Draw(spriteBatch);
         }
-        foreach (Station station in stations)
+        foreach (Platform station in stations)
         {
             station.Draw(spriteBatch);
         }
