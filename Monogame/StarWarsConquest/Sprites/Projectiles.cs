@@ -4,7 +4,7 @@ namespace StarWarsConquest;
 
 class Projectile : Sprite
 {
-    public Vector2 velocity;
+    private Vector2 velocity;
     private float speed;
     private Vector2 startPoint;
     private Vector2 endPoint;

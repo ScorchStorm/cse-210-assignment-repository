@@ -5,9 +5,9 @@ namespace StarWarsConquest;
 
 class GalacticMapScene : IScene
 {
-    ContentManager contentManager;
-    GraphicsDeviceManager graphicsDeviceManager;
-    SceneManager sceneManager;
+    private ContentManager contentManager;
+    private GraphicsDeviceManager graphicsDeviceManager;
+    private SceneManager sceneManager;
     private List<List<StarSystem>> hyperlanes = new List<List<StarSystem>>();
     private List<StarSystem> starSystems;
     // private string planetImageLocation = "C:\\Users\\Matthew\\OneDrive\\Documents\\BYU-I Spring Semester 2024 Files\\Programming with Classes (CSE 210)\\cse-210-assignment-repository\\final\\FinalProject\\images\\Sphere-with-blender.png";

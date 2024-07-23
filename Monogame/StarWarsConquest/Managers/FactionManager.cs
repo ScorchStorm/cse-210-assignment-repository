@@ -4,7 +4,7 @@ namespace StarWarsConquest;
 
 class FactionManager
 {
-    List<Faction> factions;
+    private List<Faction> factions;
     public FactionManager(Dictionary<string, StarSystem> systemDictionary, Dictionary<string, Texture2D> textureDict)
     {
         // starSystems = new List<StarSystem>{alderaan, alsakan, bespin, bilbringi, bonadan, bothawui, corellia, coruscant, dantooine, denon, dromundKaas, endor, eriadu, felucia, geonosis, helska, honoghr, hoth, kamino, kashyyyk, korriban, kuat, lego, mandalore, monCala, mustafar, muunilinst, mygeeto, naboo, nalHutta, onderon, ordMantell, ryloth, saleucami, serenno, sernpidal, sullust, taris, tatooine, tund, yagDhul, yavin};

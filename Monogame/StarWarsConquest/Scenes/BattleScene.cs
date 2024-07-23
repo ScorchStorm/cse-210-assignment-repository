@@ -6,9 +6,9 @@ namespace StarWarsConquest;
 
 class BattleScene : IScene
 {
-    ContentManager contentManager;
-    GraphicsDeviceManager graphicsDeviceManager;
-    SceneManager sceneManager;
+    private ContentManager contentManager;
+    private GraphicsDeviceManager graphicsDeviceManager;
+    private SceneManager sceneManager;
     private readonly List<Vector2> attackingFleetPositions = new()
     {
         new Vector2(710,274),
