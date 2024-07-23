@@ -8,11 +8,11 @@ class GalacticMapScene : IScene
     ContentManager contentManager;
     GraphicsDeviceManager graphicsDeviceManager;
     SceneManager sceneManager;
-    private List<List<StarSystem>> hyperlanes;
+    private List<List<StarSystem>> hyperlanes = new List<List<StarSystem>>();
     private List<StarSystem> starSystems;
     // private string planetImageLocation = "C:\\Users\\Matthew\\OneDrive\\Documents\\BYU-I Spring Semester 2024 Files\\Programming with Classes (CSE 210)\\cse-210-assignment-repository\\final\\FinalProject\\images\\Sphere-with-blender.png";
     private string imageName = "Sphere-with-blender";
-    private static Dictionary<string, StarSystem> systemDictionary;
+    private Dictionary<string, StarSystem> systemDictionary;
     private List<Faction> factions;
     public GalacticMapScene(ContentManager contentManager, GraphicsDeviceManager graphicsDeviceManager, SceneManager sceneManager, Dictionary<string,Texture2D>textureDict)
     {
@@ -116,7 +116,7 @@ class GalacticMapScene : IScene
         StarSystem coruscant = new StarSystem(texture, new Vector2(900, 1480), "Coruscant", 5, "Coruscant, the glittering jewel of the Core Worlds, serves as the political and cultural heart of the galaxy. It has been the capital of the Galactic Republic and the Galactic Empire, a nexus of power, trade, and influence. The Republic Senate once convened here, guiding the fate of countless star systems. Later, the Galactic Empire's iron grip was firmly established within its towering spires. Coruscant's strategic location and immense population have shaped the course of galactic history.");
         StarSystem dantooine = new StarSystem(texture, new Vector2(1060, 690), "Dantooine", 1, "Dantooine, a remote agrarian world, holds a quiet significance in galactic history. Once a hidden Rebel base, its plains and ruins have seen both peace and conflict. Though the Rebel base was abandoned, the planet's isolation has made it a potential staging ground for covert operations. Dantooine's pastoral serenity belies its historical role in the larger galactic narrative.");
         StarSystem denon = new StarSystem(texture, new Vector2(1390, 2120), "Denon", 4, "Denon, a bustling ecumenopolis, rivals Coruscant in its urban sprawl and economic might. Its location at the intersection of major hyperlanes makes it a vital nexus for trade and travel. Denon's infrastructure and population density make it a key strategic asset. The planet's significance lies in its economic power and central position, influencing galactic commerce and politics.");
-        StarSystem dromundKaas= new StarSystem(texture, new Vector2(2040, 620), "Dromund Kaas", 5, "Dromund Kaas, shrouded in perpetual storms and dark side energy, serves as the capital of the Reconstituted Sith Empire. This ancient world is steeped in Sith history, with powerful dark side nexuses that bolster the strength of any Sith who rule there. The Sith Emperor's presence has solidified Dromund Kaas as a bastion of dark side influence, with its strategic and mystical importance drawing Sith from across the galaxy.");
+        StarSystem dromundKaas = new StarSystem(texture, new Vector2(2040, 620), "Dromund Kaas", 5, "Dromund Kaas, shrouded in perpetual storms and dark side energy, serves as the capital of the Reconstituted Sith Empire. This ancient world is steeped in Sith history, with powerful dark side nexuses that bolster the strength of any Sith who rule there. The Sith Emperor's presence has solidified Dromund Kaas as a bastion of dark side influence, with its strategic and mystical importance drawing Sith from across the galaxy.");
         StarSystem endor = new StarSystem(texture, new Vector2(350, 2520), "Endor", 5, "The forest moon of Endor, nestled in the Outer Rim, unexpectedly became a pivotal point in galactic history. Once a tranquil sanctuary for the Ewoks, Endor's significance soared when Emperor Palpatine made the second Death Star his command center. With the destruction of this battle station, the Galactic Empire suffered a crippling blow. Today, Endor's legacy as a former seat of Imperial power and the site of a decisive Rebel victory cannot be understated.");
         StarSystem eriadu = new StarSystem(texture, new Vector2(1220, 2770), "Eriadu", 4, "Eriadu is an industrial hub, influential in the rise of key Imperial figures such as Grand Moff Tarkin. The planet's manufacturing capabilities have made it a significant contributor to the Imperial war machine. Eriadu's strategic location and resources play crucial roles in galactic politics and conflicts. Its industrial prowess continues to impact the galaxy.");
         StarSystem felucia = new StarSystem(texture, new Vector2(1930, 920), "Felucia", 3, "Felucia, a vibrant and dangerous jungle world, is known for its exotic flora and fauna. The planet saw significant action during the Clone Wars, with its unique terrain posing challenges for both droid and clone forces. Felucia's biodiversity and potential as a hidden base have long made it a point of interest. The planet's colorful landscape hides many secrets, reflecting its complex role in the galaxy.");
@@ -211,10 +211,34 @@ class GalacticMapScene : IScene
         AddHyperLanes(sullust, yagDhul);
     }
 
-    public void SetFactions(List<Faction> factions)
+    public void SetFactions(List<Faction> newFactions)
     {
-        this.factions = factions;
+        factions = newFactions;
+        // static readonly List<Faction> factions = newFactions;
+        // Console.WriteLine("factions set");
+        // foreach (Faction faction in factions)
+        // {
+        //     Console.WriteLine($"Faction name = {faction.GetFactionName()}");
+        // }
     }
+
+    // public void TestList()
+    // {
+    //     foreach (Faction faction in factions)
+    //     {
+    //         Console.WriteLine($"Faction name = {faction.GetFactionName()}");
+    //     }
+    // }
+
+    // public List<Faction> GetFactions()
+    // {
+    //     Console.WriteLine("\nStarted GetFactions()");
+    //     foreach (Faction faction in factions)
+    //     {
+    //         Console.WriteLine($"Faction name = {faction.GetFactionName()}");
+    //     }
+    //     return factions;
+    // }
 
     public void Load()
     {
@@ -226,7 +250,13 @@ class GalacticMapScene : IScene
         foreach (StarSystem system in starSystems)
         {
             system.Draw(spriteBatch);
+            // Console.WriteLine($"system name: {system.GetName()}");
         }
+        // factions = GetFactions();
+        // foreach (Faction faction in factions)
+        // {
+        //     Console.WriteLine($"Faction name = {faction.GetFactionName()}");
+        // }
         foreach (Faction faction in factions)
         {
             foreach (Fleet fleet in faction.GetFleets())
@@ -257,7 +287,7 @@ class GalacticMapScene : IScene
         return starSystems;
     }
 
-    public static Dictionary<string, StarSystem> GetSystemDictionary()
+    public Dictionary<string, StarSystem> GetSystemDictionary()
     {
         return systemDictionary;
     }

@@ -87,7 +87,7 @@ class Faction
         scout = new Ship(textureDict[scoutClassName], scoutScale, "Scout", scoutClassName, (int)(10*cost), (int)(100*shipHealth), (int)(100*shieldStrength), GetWeapons(1), 4);
         cruiser = new Ship(textureDict[cruiserClassName], cruiserScale, "Cruser", cruiserClassName, (int)(20*cost), (int)(200*shipHealth), (int)(200*shieldStrength), GetWeapons(2), 2);
         dreadnaught = new Ship(textureDict[dreadnaughtClassName], dreadnaughtScale, "Dreadnaught", dreadnaughtClassName, (int)(50*cost), (int)(400*shipHealth), (int)(400*shieldStrength), GetWeapons(4), 1.5f);
-        starbase = new Starbase(textureDict["Starbase"], starbaseScale, "Starbase", "Golan III Defense Platform", (int)(50*cost), (int)(400*stationHealth), (int)(400*shieldStrength), GetWeapons(4), (float)(repairRate*0.40));
+        starbase = new Starbase(textureDict["Golan III Defense Platform"], starbaseScale, "Starbase", "Golan III Defense Platform", (int)(50*cost), (int)(400*stationHealth), (int)(400*shieldStrength), GetWeapons(4), (float)(repairRate*0.40));
         advancedStarbase = new Starbase(textureDict[advancedStarbaseName], advancedStarbaseScale, "Advanced Starbase", advancedStarbaseName, (int)(100*cost), (int)(800*stationHealth), (int)(800*shieldStrength), GetWeapons(8), (float)(repairRate*0.60));
         turret = new Turret(textureDict["XQ1 Platform"], turretScale, (int)(5*cost), (int)(100*shipHealth), (int)(100*shieldStrength), GetWeapons(0.5f));
         miningStation = new MiningStation(textureDict["Mining Station"], miningStationScale, (int)(20*cost), (int)(200*stationHealth), (int)(200*shieldStrength), miningEfficiency);
@@ -232,6 +232,11 @@ class Faction
             income += system.GetIncome(industry, miningEfficiency);
         }
         credits += (int)income;
+    }
+
+    public string GetFactionName()
+    {
+        return name;
     }
 
     public void Research()

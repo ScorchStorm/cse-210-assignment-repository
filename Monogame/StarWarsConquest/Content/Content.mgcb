@@ -13,7 +13,7 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin ../../images/Aperture Science -  every hazard.png
+#begin ../../images/Aperture Science - every hazard.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -23,7 +23,7 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:../../images/Aperture Science -  every hazard.png;Aperture Science -  every hazard.png
+/build:../../images/Aperture Science - every hazard.png;Aperture Science - every hazard.png
 
 #begin ../../images/CIS - Lucrehulk-Class Battleship.png
 /importer:TextureImporter
@@ -396,6 +396,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:../../images/Research Station.png;Research Station.png
+
+#begin ../../images/Sphere-with-blender.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:../../images/Sphere-with-blender.png;Sphere-with-blender.png
 
 #begin ../../images/Star Wars - Explosion.png
 /importer:TextureImporter

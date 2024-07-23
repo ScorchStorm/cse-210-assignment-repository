@@ -11,6 +11,7 @@ class Fleet
     private Ship dreadnaught;
     private StarSystem position;
     private Faction faction;
+    private int movementsRemaining;
     public Fleet(Admiral admiral, Ship scout, Ship cruiser, Ship dreadnaught, Faction faction)
     {
         this.admiral = admiral;
@@ -20,6 +21,7 @@ class Fleet
         ships.Add(cruiser);
         position = faction.GetCapital();
         faction.GetCapital().SetFleet(this);
+        movementsRemaining = (int)admiral.GetMovementSpeed();
     }
 
     public void Repair(Starbase starbase)
@@ -44,10 +46,20 @@ class Fleet
         }
     }
 
+    public void ResetMovementCounter()
+    {
+        movementsRemaining = admiral.GetMovementSpeed();
+    }
+
+    public int GetMovementsRemaining()
+    {
+        return movementsRemaining;
+    }
+
     public void Move(StarSystem system)
     {
-        position.SetFleet(null); // I don't know if this is the right way to do this...
-        position = system;
+        // position.SetFleet(null); // I don't know if this is the right way to do this...
+        // position = system;
         if (system.GetFleet() != null)
         {
             system.Battle(this);
@@ -55,6 +67,7 @@ class Fleet
         if (system.GetFleet == null) // the fleet won the battle (or there was no battle) and moves to the new system
         {
             system.SetFleet(this);
+            position = system;
         }
     }
 

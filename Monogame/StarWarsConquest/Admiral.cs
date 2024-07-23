@@ -65,6 +65,11 @@ class Admiral
         }
     }
 
+    public string GetName()
+    {
+        return name;
+    }
+
     public void SetMovementSpeed(int movementSpeed)
     {
         this.movementSpeed = movementSpeed;
@@ -85,7 +90,7 @@ class Admiral
         this.level = level;
     }
 
-    public float GetMovementSpeed()
+    public int GetMovementSpeed()
     {
         return movementSpeed;
     }
