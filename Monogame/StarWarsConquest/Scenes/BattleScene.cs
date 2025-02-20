@@ -30,8 +30,8 @@ class BattleScene : IScene
         new Vector2(911,465)
     };
     private readonly List<Vector2> stationPositions = new();
-    private List<Ship> defendingShips;
-    private List<Ship> attackingShips;
+    private Ship[] defendingShips;
+    private Ship[] attackingShips;
     private List<Platform> stations;
 
 

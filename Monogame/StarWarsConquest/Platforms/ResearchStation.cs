@@ -4,7 +4,7 @@ namespace StarWarsConquest;
 class ResearchStation: Platform
 {
     private float researchRate;
-    public ResearchStation(Texture2D texture, float scale, int cost, float maxHealth, float maxShields, float researchRate): base(texture, scale, "Research Station", "Research Station", cost, maxHealth, maxShields)
+    public ResearchStation(Texture2D texture, int width, int cost, float maxHealth, float maxShields, float researchRate): base(texture, width, "Research Station", "Research Station", cost, maxHealth, maxShields)
     {
         this.researchRate = researchRate;
     }

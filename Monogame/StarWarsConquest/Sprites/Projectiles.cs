@@ -9,7 +9,7 @@ class Projectile : Sprite
     private Vector2 startPoint;
     private Vector2 endPoint;
 
-    public Projectile(Vector2 velocity, Vector2 startPoint, Vector2 endPoint, float speed, Texture2D texture, float SCALE) : base(texture, SCALE)
+    public Projectile(Vector2 velocity, Vector2 startPoint, Vector2 endPoint, float speed, Texture2D texture, int width) : base(texture, width)
     {
         this.velocity = velocity;
         this.startPoint = startPoint;

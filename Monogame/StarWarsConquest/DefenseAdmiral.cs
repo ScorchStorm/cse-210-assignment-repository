@@ -8,11 +8,12 @@
 // |  4   | +80% defense, 2 moves per turn                 |
 // |  5   | +100% defense, 3 moves per turn                |
 // +-------------------------------------------------------+
+using System;
 namespace StarWarsConquest;
 
 class DefenseAdmiral: Admiral
 {
-    public DefenseAdmiral(string name, string description): base(name, description)
+    public DefenseAdmiral(string name, string description): base(name, description, "Defense")
     {
         SetDefenseStrength(1.1);
     }
@@ -38,5 +39,7 @@ class DefenseAdmiral: Admiral
             SetDefenseStrength(2);
             SetMovementSpeed(3);
         }
+        Console.WriteLine($"Congratualtions! {name} has leveled up!");
+        PrintStats();
     }
 }

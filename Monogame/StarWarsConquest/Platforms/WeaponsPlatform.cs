@@ -8,7 +8,7 @@ class WeaponsPlatform: Platform
     protected List<Weapon> weapons = new List<Weapon>();
     
     // protected float RechargeRate;
-    public WeaponsPlatform(Texture2D texture, float scale, string type, string className, int cost, float maxHealth, float maxShields, List<Weapon> weapons): base(texture, scale, type, className, cost, maxHealth, maxShields)
+    public WeaponsPlatform(Texture2D texture, int width, string type, string className, int cost, float maxHealth, float maxShields, List<Weapon> weapons): base(texture, width, type, className, cost, maxHealth, maxShields)
     {
         this.weapons = weapons;
     }
@@ -18,14 +18,29 @@ class WeaponsPlatform: Platform
         return weapons;
     }
 
-    public float GetStrength()
+    public float GetTotalDPS()
     {
         float TotalDPS = 0;
         foreach (Weapon weapon in weapons)
         {
             TotalDPS += weapon.GetAverageDPS();
         }
+        return TotalDPS;
+    }
+
+    public float GetStrength()
+    {
+        float TotalDPS = GetTotalDPS();
         return TotalDPS*(health + shields/2);
+    }
+
+    public float GetTargetPriority()
+    {
+        float TotalDPS = GetTotalDPS();
+        if (shields >= 0)
+            return TotalDPS/(health + shields/2);
+        else
+            return TotalDPS/health;
     }
 
     public void Attack(Platform target, float bonus)

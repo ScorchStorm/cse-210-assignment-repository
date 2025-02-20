@@ -29,7 +29,8 @@ class FactionManager
         string sithCruiserClassName = "Terminus-Class Destroyer";
         string sithDreadnaughtClassName = "Harrower-Class Dreadnought";
         string sithAdvancedStarbaseName = "Sith Space Station";
-        Faction sithEmpire = new Faction(textureDict, "Sith Empire", credits, sithCapital, sithAdmirals, sithResearchOptions, sithMiningEfficiency, sithIndustry, sithFacilities, sithStationHealth, sithManeuvering, sithWeaponStrength, sithShieldStrength, sithShipHealth, sithCost, sithResearchEfficiency, sithRepairRate, sithScoutClassName, sithCruiserClassName, sithDreadnaughtClassName, sithAdvancedStarbaseName);
+        string sithInsigniaName = "Reconstituted Sith Empire Insignia";
+        Faction sithEmpire = new Faction(textureDict, "Sith Empire", credits, sithCapital, sithAdmirals, sithResearchOptions, sithMiningEfficiency, sithIndustry, sithFacilities, sithStationHealth, sithManeuvering, sithWeaponStrength, sithShieldStrength, sithShipHealth, sithCost, sithResearchEfficiency, sithRepairRate, sithScoutClassName, sithCruiserClassName, sithDreadnaughtClassName, sithAdvancedStarbaseName, sithInsigniaName);
         
         StarSystem calamariCapital = systemDictionary["monCala"];
         List<Admiral> calamariAdmirals = new List<Admiral>{new DefenseAdmiral("Ackbar", "Ackbar is celebrated for his defensive strategies, including his role in protecting the Rebel fleet and key locations like the Battle of Endor."), new AttackAdmiral("Raddus", "Raddus is known for his aggressive tactics and ability to hit enemy fleets hard, playing a key role in the Battle of Scarif."), new MovementAdmiral("Aril Nunb", "Nunb is known for her ability to move fleets swiftly and efficiently, playing a crucial role in several key battles for the Mon Calamari.")};
@@ -49,7 +50,8 @@ class FactionManager
         string calamariCruiserClassName = "MC75 Star Cruiser";
         string calamariDreadnaughtClassName = "MC80 Star Cruiser";
         string calamariAdvancedStarbaseName = "Shipyards T-Frame";
-        Faction monCalamari = new Faction(textureDict, "Mon Calamari", credits, calamariCapital, calamariAdmirals, calamariResearchOptions, calamariMiningEfficiency, calamariIndustry, calamariFacilities, calamariStationHealth, calamariManeuvering, calamariWeaponStrength, calamariShieldStrength, calamariShipHealth, calamariCost, calamariResearchEfficiency, calamariRepairRate, calamariScoutClassName, calamariCruiserClassName, calamariDreadnaughtClassName, calamariAdvancedStarbaseName);
+        string calamariInsigniaName = "Mon Calamari Insignia";
+        Faction monCalamari = new Faction(textureDict, "Mon Calamari", credits, calamariCapital, calamariAdmirals, calamariResearchOptions, calamariMiningEfficiency, calamariIndustry, calamariFacilities, calamariStationHealth, calamariManeuvering, calamariWeaponStrength, calamariShieldStrength, calamariShipHealth, calamariCost, calamariResearchEfficiency, calamariRepairRate, calamariScoutClassName, calamariCruiserClassName, calamariDreadnaughtClassName, calamariAdvancedStarbaseName, calamariInsigniaName);
 
         StarSystem separatistCapital = systemDictionary["geonosis"];
         List<Admiral> separatistAdmirals = new List<Admiral> {new AttackAdmiral("Grievous", "Grievous is infamous for his aggressive tactics, focusing on inflicting heavy damage on Republic fleets and installations."), new DefenseAdmiral(" Trench", "Trench is adept at defending key Separatist positions and using cunning strategies to maintain control over contested areas."), new MovementAdmiral("Nym", "Nym's ability to move quickly and strike rapidly has been a significant advantage for the Separatist Alliance.")};
@@ -69,7 +71,8 @@ class FactionManager
         string separatistCruiserClassName = "Munificient-Class Star Frigate";
         string separatistDreadnaughtClassName = "Providence-Class Fleet Carrier";
         string separatistAdvancedStarbaseName = "Lucrehulk-Class Battleship";
-        Faction separatists = new Faction(textureDict, "Confederacy of Independent Systems", credits, separatistCapital, separatistAdmirals, separatistResearchOptions, separatistMiningEfficiency, separatistIndustry, separatistFacilities, separatistStationHealth, separatistManeuvering, separatistWeaponStrength, separatistShieldStrength, separatistShipHealth, separatistCost, separatistResearchEfficiency, separatistRepairRate, separatistScoutClassName, separatistCruiserClassName, separatistDreadnaughtClassName, separatistAdvancedStarbaseName);
+        string separatistInsigniaName = "Separatist Insigna";
+        Faction separatists = new Faction(textureDict, "Confederacy of Independent Systems", credits, separatistCapital, separatistAdmirals, separatistResearchOptions, separatistMiningEfficiency, separatistIndustry, separatistFacilities, separatistStationHealth, separatistManeuvering, separatistWeaponStrength, separatistShieldStrength, separatistShipHealth, separatistCost, separatistResearchEfficiency, separatistRepairRate, separatistScoutClassName, separatistCruiserClassName, separatistDreadnaughtClassName, separatistAdvancedStarbaseName, separatistInsigniaName);
 
         StarSystem imperialCapital = systemDictionary["endor"];
         List<Admiral> imperialAdmirals = new List<Admiral>{new DefenseAdmiral("Piett", "Piett is known for his ability to protect key Imperial assets and maintain control over contested regions, exemplified by his command during the Battle of Endor."), new MovementAdmiral("Daala", "Daala's skills in quickly moving fleets through the galaxy and launching surprise attacks have been crucial in various Imperial campaigns."), new AttackAdmiral("Thrawn", "Thrawn is renowned for his tactical genius and ability to inflict devastating damage on enemy fleets through precise, well-planned attacks.")};
@@ -89,7 +92,8 @@ class FactionManager
         string imperialCruiserClassName = "Vindicator-Class Heavy Cruiser";
         string imperialDreadnaughtClassName = "Imperial Star Destroyer";
         string imperialAdvancedStarbaseName = "Empress-Class Space Station";
-        Faction galacticEmpire = new Faction(textureDict, "Galactic Empire", credits, imperialCapital, imperialAdmirals, imperialResearchOptions, imperialMiningEfficiency, imperialIndustry, imperialFacilities, imperialStationHealth, imperialManeuvering, imperialWeaponStrength, imperialShieldStrength, imperialShipHealth, imperialCost, imperialResearchEfficiency, imperialRepairRate, imperialScoutClassName, imperialCruiserClassName, imperialDreadnaughtClassName, imperialAdvancedStarbaseName);
+        string imperialInsigniaName = "Galactic Empire Insignia";
+        Faction galacticEmpire = new Faction(textureDict, "Galactic Empire", credits, imperialCapital, imperialAdmirals, imperialResearchOptions, imperialMiningEfficiency, imperialIndustry, imperialFacilities, imperialStationHealth, imperialManeuvering, imperialWeaponStrength, imperialShieldStrength, imperialShipHealth, imperialCost, imperialResearchEfficiency, imperialRepairRate, imperialScoutClassName, imperialCruiserClassName, imperialDreadnaughtClassName, imperialAdvancedStarbaseName, imperialInsigniaName);
 
         StarSystem republicCapital = systemDictionary["coruscant"];
         List<Admiral> republicAdmirals = new List<Admiral> {new DefenseAdmiral("Yularen", "Yularen is known for his defensive strategies during the Clone Wars, particularly in protecting key Republic assets and maintaining control over important regions."), new AttackAdmiral("Tarkin", "Tarkin, before becoming a Grand Moff for the Empire, demonstrated aggressive and effective tactics during the Clone Wars."), new MovementAdmiral("Wullf Yularen", "Yularen's ability to rapidly move fleets and coordinate attacks made him a vital asset in the Republic's war efforts against the Separatists.")};
@@ -109,7 +113,8 @@ class FactionManager
         string republicCruiserClassName = "Acclamator-Class Assault Ship";
         string republicDreadnaughtClassName = "Venator-Class Star Destroyer";
         string republicAdvancedStarbaseName = "Haven-Class Medical Station";
-        Faction galacticRepublic = new Faction(textureDict, "Galactic Republic", credits, republicCapital, republicAdmirals, republicResearchOptions, republicMiningEfficiency, republicIndustry, republicFacilities, republicStationHealth, republicManeuvering, republicWeaponStrength, republicShieldStrength, republicShipHealth, republicCost, republicResearchEfficiency, republicRepairRate, republicScoutClassName, republicCruiserClassName, republicDreadnaughtClassName, republicAdvancedStarbaseName);
+        string republicInsigniaName = "Galactic Republic Insignia";
+        Faction galacticRepublic = new Faction(textureDict, "Galactic Republic", credits, republicCapital, republicAdmirals, republicResearchOptions, republicMiningEfficiency, republicIndustry, republicFacilities, republicStationHealth, republicManeuvering, republicWeaponStrength, republicShieldStrength, republicShipHealth, republicCost, republicResearchEfficiency, republicRepairRate, republicScoutClassName, republicCruiserClassName, republicDreadnaughtClassName, republicAdvancedStarbaseName, republicInsigniaName);
 
         // Yuuzhan Vong: Warmaster Tsavong Lah - Attack, Commander Czulkang Lah - Defense, Supreme Commander Nas Choka - Movement
 
@@ -131,9 +136,32 @@ class FactionManager
         string vongCruiserClassName = "Matalok";
         string vongDreadnaughtClassName = "Miid Ro'ik";
         string vongAdvancedStarbaseName = "Kor Chokk";
-        Faction yuuzhanVong = new Faction(textureDict, "Yuuzhan Vong", credits, vongCapital, vongAdmirals, vongResearchOptions, vongMiningEfficiency, vongIndustry, vongFacilities, vongStationHealth, vongManeuvering, vongWeaponStrength, vongShieldStrength, vongShipHealth, vongCost, vongResearchEfficiency, vongRepairRate, vongScoutClassName, vongCruiserClassName, vongDreadnaughtClassName, vongAdvancedStarbaseName);
+        string vongInsigniaName = "Yuuzhan Vong Insignia";
+        Faction yuuzhanVong = new Faction(textureDict, "Yuuzhan Vong", credits, vongCapital, vongAdmirals, vongResearchOptions, vongMiningEfficiency, vongIndustry, vongFacilities, vongStationHealth, vongManeuvering, vongWeaponStrength, vongShieldStrength, vongShipHealth, vongCost, vongResearchEfficiency, vongRepairRate, vongScoutClassName, vongCruiserClassName, vongDreadnaughtClassName, vongAdvancedStarbaseName, vongInsigniaName);
     
-        factions = new List<Faction>(){sithEmpire, monCalamari, separatists, galacticEmpire, galacticRepublic, yuuzhanVong};
+
+        StarSystem neutralCapital = null;
+        List<Admiral> neutralAdmirals = new List<Admiral>{new DefenseAdmiral("Neutral 1", "Unknown"), new DefenseAdmiral("Neutral 2", "Unknown"), new DefenseAdmiral("Neutral 3", "Unknown")};
+        List<string> neutralResearchOptions = new List<string>{"Option 1", "Option 2", "Option 3", "Option 4", "Option 5", "Option 6"};
+        float neutralMiningEfficiency = (float)0.8;
+        float neutralIndustry = (float)0.8;
+        float neutralFacilities = (float)0.8;
+        float neutralStationHealth = (float)0.8;
+        float neutralManeuvering = (float)0.8;
+        float neutralWeaponStrength = (float)0.8;
+        float neutralShieldStrength = (float)0.8;
+        float neutralShipHealth = (float)0.8;
+        float neutralCost = (float)0.8;
+        float neutralResearchEfficiency = (float)0.8;
+        float neutralRepairRate = (float)0.8;
+        string neutralScoutClassName = "Cargo Freighter";
+        string neutralCruiserClassName = "Mandalorian Cruiser";
+        string neutralDreadnaughtClassName = "Interdictor-Class Cruiser";
+        string neutralAdvancedStarbaseName = "Empress-Class Space Station";
+        string neutralInsigniaName = "Darth Reven's Insigina";
+        Faction neutral = new Faction(textureDict, "Neutral", credits, neutralCapital, neutralAdmirals, neutralResearchOptions, neutralMiningEfficiency, neutralIndustry, neutralFacilities, neutralStationHealth, neutralManeuvering, neutralWeaponStrength, neutralShieldStrength, neutralShipHealth, neutralCost, neutralResearchEfficiency, neutralRepairRate, neutralScoutClassName, neutralCruiserClassName, neutralDreadnaughtClassName, neutralAdvancedStarbaseName, neutralInsigniaName);
+
+        factions = new List<Faction>(){sithEmpire, monCalamari, separatists, galacticEmpire, galacticRepublic, yuuzhanVong, neutral};
     }
 
     public List<Faction> GetFactions()
@@ -144,9 +172,6 @@ class FactionManager
     public void BuildTestFleets()
     {
         foreach (Faction faction in factions)
-        {
             faction.CreateNewFleet();
-            // faction.AddNewShip(faction.getDreadnaught());
-        }
     }
 }

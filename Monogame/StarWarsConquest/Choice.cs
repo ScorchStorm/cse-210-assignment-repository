@@ -39,7 +39,10 @@ class Choice
             try
             {
                 index = int.Parse(input);
-                return index-1;
+                if (index >= 1 && index <= choices.Count)
+                    return index-1;
+                else
+                    Console.WriteLine($"Invalid input. Please enter a number between 1 and {choices.Count}");
             }
             catch
             {

@@ -53,6 +53,7 @@ namespace StarWarsConquest
     class Sprite
     {
         private float scale;
+        private int width;
         private Texture2D texture;
         private Vector2 position;
         // public Texture2D texture;
@@ -70,26 +71,29 @@ namespace StarWarsConquest
             }
         }
 
-        public Sprite(float scale = 1)
-        {
-            this.scale = scale;
-        }
-        public Sprite(Texture2D texture, float scale = 1)
+        public Sprite(Texture2D texture, int width = 300)
         {
             this.texture = texture;
-            this.scale = scale;
+            this.width = width;
+            this.scale = (float)width/texture.Width;
         }
 
-        public Sprite(Texture2D texture, Vector2 position, float scale = 1)
-        {   
+        public Sprite(Texture2D texture, Vector2 position, int width = 300)
+        {
             this.texture = texture;
             this.position = position;
-            this.scale = scale;
+            this.width = width;
+            this.scale = (float)width/texture.Width;
         }
 
         public float GetScale()
         {
             return scale;
+        }
+
+        public int GetWidth()
+        {
+            return width;
         }
 
         public Texture2D GetTexture()

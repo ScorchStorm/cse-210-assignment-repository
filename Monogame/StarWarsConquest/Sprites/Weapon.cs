@@ -31,11 +31,11 @@ class Weapon
             Fire(target, bonus);
             rechargeTime = 0;
         }
-        else
-        {
-            // Console.WriteLine($"1/rechargeRate = {1/rechargeRate}");
-            Console.WriteLine($"Weapon Not Reloaded Yet");
-        }
+        // else
+        // {
+        //     // Console.WriteLine($"1/rechargeRate = {1/rechargeRate}");
+        //     Console.WriteLine($"Weapon Not Reloaded Yet");
+        // }
     }
 
     public void Fire(Platform target, float bonus)

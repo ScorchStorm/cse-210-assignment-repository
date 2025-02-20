@@ -8,11 +8,12 @@
 // |  4   | +80% attacking, 2 moves per turn               |
 // |  5   | +100% attacking, 3 moves per turn              |
 // +-------------------------------------------------------+
+using System;
 namespace StarWarsConquest;
 
 class AttackAdmiral: Admiral
 {
-    public AttackAdmiral(string name, string description): base(name, description)
+    public AttackAdmiral(string name, string description): base(name, description, "Attack")
     {
         SetAttackStrength(1.1);
     }
@@ -38,5 +39,7 @@ class AttackAdmiral: Admiral
             SetAttackStrength(2);
             SetMovementSpeed(3);
         }
+        Console.WriteLine($"Congratualtions! {name} has leveled up!");
+        PrintStats();
     }
 }

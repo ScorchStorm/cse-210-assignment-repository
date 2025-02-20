@@ -6,7 +6,7 @@ namespace StarWarsConquest;
 class Starbase: WeaponsPlatform
 {
     private float repairRate;
-    public Starbase(Texture2D texture, float scale, string type, string className, int cost, float maxHealth, float maxShields, List<Weapon> weapons, float repairRate): base(texture, scale, type, className, cost, maxHealth, maxShields, weapons)
+    public Starbase(Texture2D texture, int width, string type, string className, int cost, float maxHealth, float maxShields, List<Weapon> weapons, float repairRate): base(texture, width, type, className, cost, maxHealth, maxShields, weapons)
     {
         this.repairRate = repairRate;
         this.className = className;
